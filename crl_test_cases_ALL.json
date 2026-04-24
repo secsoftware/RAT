@@ -1,0 +1,4519 @@
+[
+    {
+        "num": "openssl26325",
+        "issue": {
+            "create Authority Information Access": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "test.local",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "openssl26237",
+        "issue": {
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": ""
+            },
+            "issuer": "C=TW, O=TAIWAN-CA, OU=Root CA, CN=TWCA Global Root CA"
+        }
+    },
+    {
+        "num": "openssl26183",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "www.domains",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "openssl26143",
+        "issue": {
+            "serial": "1111",
+            "issuer": "C=US, ST=Colorado, L=Colorado, O=Digicert Technologies, OU=Digicert, CN=Raghavendra Babu K, emailAddress=digicert@test.com"
+        }
+    },
+    {
+        "num": "openssl25956",
+        "issue": {
+            "serial": "CGazNF2HTsMN",
+            "issuer": "CN=ca1, OU=ca1, L=ca1, ST=ca1, C=cn"
+        }
+    },
+    {
+        "num": "openssl25880",
+        "issue": {
+            "thisUpdae": "Nov  4 17:59:38 2024 GMT",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "16:70:4B:7F:35:1E:36:07:F1:8C:4B:70:00:5C:3A:00:3D:FD:41:4A"
+            },
+            "issuer": "countryName               = US\norganizationName          = Entrust, Inc.\norganizationalUnitName    = See www.entrust.net/legal-terms\norganizationalUnitName    = (c) 2016 Entrust, Inc. - for authorized use only\ncommonName                = Entrust eSIM Certification Authority"
+        }
+    },
+    {
+        "num": "openssl25853",
+        "issue": {
+            "thisUpdae": "Dec 14 16:50:00 2023 GMT",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "14:80:30:FC:24:6C:02:FF:22:21:06:12:5A:8D:6B:DA:99:0A:FB:E9"
+            },
+            "create Issuer Alternative Name": {
+                "URI": "http://crl.uni-ca.com.cn/download/nB.crl",
+                "DNS": "test.local",
+                "email": "admin@test.local"
+            },
+            "issuer": "C = CN, ST = BEIJING, L = BEIJING, OU = CTTL, O = CAICT, CN = Taier eSIM Root CA - NISTP256"
+        }
+    },
+    {
+        "num": "openssl25799",
+        "issue": {
+            "create authorityKeyIdentifier": [
+                {
+                    "KeyIdentifier": "123456"
+                },
+                {
+                    "KeyIdentifier": "123456"
+                }
+            ]
+        }
+    },
+    {
+        "num": "openssl25739",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "https://1kYj\\[@.cfZGv3T_Tr.D?/zrm3/4WA/Ir}BQ/yR]/0[g?<tX=uR?&K'O={d2}&sG?rLi=<}e>",
+                "DNS": "test.local",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "openssl25597",
+        "issue": {
+            "issuer": "CN=Ivanov, emailAddress=ivanov@mail.ru, stateOrProvinceName=Moscow, countryName=RU"
+        }
+    },
+    {
+        "num": "openssl25527",
+        "issue": {
+            "thisUpdae": "Sep  1 00:00:00 2024 GMT",
+            "serial": "1C80022EF81F2405EE96A612DCB61FE0AC701E5E",
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8000/ca_crl.der",
+                "DNS": "test.local",
+                "email": "admin@test.local"
+            },
+            "issuer": "C=US, ST=California, L=San Francisco, O=My Company, CN=My Root CA"
+        }
+    },
+    {
+        "num": "openssl25349",
+        "issue": {
+            "serial": "1603629828626001380",
+            "issuer": "CN=GlobalSign GCC R45 Qualified Signing CA 2020, SERIALNUMBER=NTREBE-0459134256, O=GlobalSign nv-sa, C=BE",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "0417C35D9A6AC82A899B38F6DA6667F2B3C93EF6"
+            },
+            "create Issuer Alternative Name": {
+                "URI": "http://ocsp.globalsign.com/docsignrootr45",
+                "DNS": "test.local",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "openssl25156",
+        "issue": {
+            "issuer": "O=Test, OU=Some OU, CN=Certificate Authority"
+        }
+    },
+    {
+        "num": "openssl25140",
+        "issue": {
+            "issuer": "C=US,O=Network Solutions L.L.C.,CN=Network Solutions Certificate Authority"
+        }
+    },
+    {
+        "num": "openssl25023",
+        "issue": {
+            "serial": "102"
+        }
+    },
+    {
+        "num": "openssl24793",
+        "issue": {
+            "serial": "1"
+        }
+    },
+    {
+        "num": "openssl24697",
+        "issue": {
+            "issuer": "C = US, O = Let's Encrypt, CN = E6"
+        }
+    },
+    {
+        "num": "openssl24601",
+        "issue": {
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "0."
+            }
+        }
+    },
+    {
+        "num": "openssl24415",
+        "issue": {
+            "serial": "41:33:39:24:e6:16:8b:50:59:69:81:9d:dc:21:5e:f9:32:5e:ce:1a",
+            "issuer": "C=US, ST=California, L=San Francisco, O=My Company, CN=mycompany.com",
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "mycompany.com",
+                "email": "admin@test.local"
+            },
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "6C:DF:2F:1B:AB:57:BD:71:AC:8A:BE:A1:2B:F3:EC:BE:E5:7A:2C:25"
+            }
+        }
+    },
+    {
+        "num": "openssl24308",
+        "issue": {
+            "thisUpdae": "Apr 27 05:31:19 2024 GMT",
+            "serial": "56D5B8C0EB3E0C162E9171A70D455B7D6541F702",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "5C:83:F3:7A:B9:09:FD:D2:C3:A8:A1:60:E6:F2:40:A7:B5:16:3A:C4"
+            },
+            "issuer": "CN = XXXX-Root-XX-GP",
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "XXXX-Root-XX-GP",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "openssl24258",
+        "issue": {
+            "serial": "0"
+        }
+    },
+    {
+        "num": "openssl24189",
+        "issue": {
+            "issuer": "CN=b.example.com"
+        }
+    },
+    {
+        "num": "openssl23963",
+        "issue": {
+            "issuer": "L = new town, CN = new system, C = US, algorithm = RSA, extendedKeyUsage = ServerAuthentication, O =TEST, OU = TestOrg, ST = new jersey"
+        }
+    },
+    {
+        "num": "openssl23664",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "test.local",
+                "email": "steve@openssl.org"
+            }
+        }
+    },
+    {
+        "num": "openssl23428",
+        "issue": {
+            "serial": "3d:1b:6b:15:c0:3a:77:0d:37:b1:3a:43:d5:d0:2b:1e:91:62:eb:98",
+            "issuer": "CN = Wi-SUN Demo Root CA",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "93:64:D4:0E:F7:68:A2:EE:5D:F0:AC:FA:72:BC:C5:1F:4D:4F:3A:24"
+            }
+        }
+    },
+    {
+        "num": "openssl23095",
+        "issue": {
+            "issuer": "CN=Root CA",
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "server.example",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "openssl22966",
+        "issue": {
+            "issuer": "CN=Test Organization Intermediate CA, OU=Test Organization Unit, O=Test Organization"
+        }
+    },
+    {
+        "num": "openssl22885",
+        "issue": {
+            "serial": "G63287510",
+            "issuer": "CN=ANF Secure Server Root CA, OU=ANF CA Raiz, O=ANF Autoridad de Certificacion, C=ES"
+        }
+    },
+    {
+        "num": "openssl22747",
+        "issue": {
+            "issuer": "C=AT, ST=NÖ, L=Großmünster, O=Lübecker GmbH, OU=Firewall, CN=openwrt.lan",
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "openwrt.lan",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "openssl22591",
+        "issue": {
+            "issuer": "CN=abc, emailAddress=client@xyz.com, O=xyz, L=Palo Alto, ST=California, C=US"
+        }
+    },
+    {
+        "num": "openssl22344",
+        "issue": {
+            "serial": "37:94:48:3d:45:55:82:0f:23:63:91:be:74:e7:33:be:7c:2b:8c:eb",
+            "issuer": "O = Example, CN = Root CA",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "3E:E7:D9:11:CD:28:17:8B:C4:AD:58:A2:9B:E2:5C:3C:18:8C:2A:FF"
+            }
+        }
+    },
+    {
+        "num": "openssl22234",
+        "issue": {
+            "serial": "38 C6 EC 88 52 C2 CB 60 42 3E D7 C7 41 27 46 E1 1D 7E DC 1A",
+            "issuer": "CN=CN, L=LN, ST=Shenyang, O=Test Org, OU=Test OU, C=CN"
+        }
+    },
+    {
+        "num": "openssl22192",
+        "issue": {
+            "serial": "3168B44D3E67DA3B9D7A7B40E08793F616EEF669",
+            "thisUpdae": "Sep 15 12:08:46 2023 GMT"
+        }
+    },
+    {
+        "num": "openssl22180",
+        "issue": {
+            "issuer": "CN=Certificate Request"
+        }
+    },
+    {
+        "num": "openssl22093",
+        "issue": {
+            "serial": "599703A4"
+        }
+    },
+    {
+        "num": "openssl21870",
+        "issue": {
+            "issuer": "CN = client, C = PL, ST = MyState, O = MyOrg"
+        }
+    },
+    {
+        "num": "openssl21769",
+        "issue": {
+            "serial": "1"
+        }
+    },
+    {
+        "num": "openssl21359",
+        "issue": {
+            "serial": "0c:a6:20:65:68:95:d8:76:71:56:6d:77:07:c7:11:82",
+            "issuer": "C = US, ST = VA, L = SomeCity, O = MyCompany, OU = MyDivision, CN = Custom Root v3"
+        }
+    },
+    {
+        "num": "openssl21276",
+        "issue": {
+            "issuer": "C=FR/ST=AAA/L=BBB/O=CCC"
+        }
+    },
+    {
+        "num": "openssl21263",
+        "issue": {
+            "serial": "ba:86:c6:d5:dc:d8:e5:42",
+            "issuer": "C = US, ST = NC, L = Raleigh, O = Eaton Corporation, OU = Electrical Division, CN = PowerXpert-52-54-00-12-34-02"
+        }
+    },
+    {
+        "num": "openssl21196",
+        "issue": {
+            "serial": "26:59:a2:3b:23:c7:63:6e:33:6c:24:43:95:aa:58:4f:c7:b7:db:c8",
+            "issuer": "C = CN, ST = JiangSu, L = ChangZhou, O = StarCharge, OU = StarCharge, CN = RootCA"
+        }
+    },
+    {
+        "num": "openssl21155",
+        "issue": {
+            "issuer": ""
+        }
+    },
+    {
+        "num": "openssl20877",
+        "issue": {
+            "serial": "66 (0x42)",
+            "issuer": "C = US, O = Org, CN = rootCA"
+        }
+    },
+    {
+        "num": "openssl20772",
+        "issue": {
+            "serial": "`00b70da24f5382fae9`",
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "yourdomain.com",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "openssl20757",
+        "issue": {
+            "issuer": "C = US, O = DigiCert Inc, OU = www.digicert.com, CN = Thawte TLS RSA CA G1"
+        }
+    },
+    {
+        "num": "openssl20599",
+        "issue": {
+            "issuer": "C = US, O = Let's Encrypt, CN = R3"
+        }
+    },
+    {
+        "num": "openssl20578",
+        "issue": {
+            "serial": "AIRcl+nfagmn",
+            "issuer": "CN=Test CA (RSA), O=test"
+        }
+    },
+    {
+        "num": "openssl20263",
+        "issue": {
+            "issuer": "DC = company, DC = activedirectory, CN = Corporate Internal Issuing CA"
+        }
+    },
+    {
+        "num": "openssl20193",
+        "issue": {
+            "thisUpdae": "20230904000000Z"
+        }
+    },
+    {
+        "num": "openssl20189",
+        "issue": {
+            "thisUpdae": "Feb  1 15:55:13 2023 GMT"
+        }
+    },
+    {
+        "num": "openssl20101",
+        "issue": {
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "E4:94:13:93:50:60:F1:D2:EB:B9:EC:28:03:A9:C2:5E:CC:4F:0C:C9"
+            },
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "localhost",
+                "email": "admin@test.local"
+            },
+            "issuer": "C=ES, ST=Spain, L=Barcelona, O=MyCompany, OU=Default CA Deployment"
+        }
+    },
+    {
+        "num": "openssl20045",
+        "issue": {
+            "issuer": "CN = Ed25519 Test"
+        }
+    },
+    {
+        "num": "openssl20027",
+        "issue": {
+            "serial": "42 (0x2a)",
+            "issuer": "C=DE, ST=Germany, L=Berlin, O=mendelson-e-commerce GmbH, OU=(c) 2016 mendelson-e-commerce GmbH - for authorized use only, CN=mendelson Public Primary Certification Authority - R6/emailAddress=ca@mendelson-e-c.com",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "6C:F1:70:37:E5:13:46:FC:5D:99:E8:5A:4A:0A:E8:B6:B9:AB:32:FE"
+            },
+            "create Issuer Alternative Name": {
+                "URI": "http://ca.mendelson-e-c.com/crl.der",
+                "DNS": "test.local",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "openssl20009",
+        "issue": {
+            "issuer": "C = US, O = Google Trust Services LLC, CN = GTS CA 1C3"
+        }
+    },
+    {
+        "num": "openssl19988",
+        "issue": {
+            "issuer": "CN=test, OU=test, O=test, L=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "openssl19987",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "localhost",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "openssl19867",
+        "issue": {
+            "issuer": "C = CH, ST = Gen\\C3\\A8ve, O = CERN Organisation Europ\\C3\\A9enne pour la Recherche Nucl\\C3\\A9aire, CN = mmm.cern.ch"
+        }
+    },
+    {
+        "num": "openssl19723",
+        "issue": {
+            "issuer": "C = RU, ST = \\D0\\9C\\D0\\BE\\D1\\81\\D0\\BA\\D0\\B2\\D0\\B0, L = \\D0\\9C\\D0\\BE\\D1\\81\\D0\\BA\\D0\\B2\\D0\\B0, O = \\D0\\9E\\D0\\9E\\D0\\9E"
+        }
+    },
+    {
+        "num": "openssl19639",
+        "issue": {
+            "issuer": "C = GB, ST = London, L = London, O = My Company, CN = localhost, emailAddress = email@email.com"
+        }
+    },
+    {
+        "num": "openssl19614",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "localhost",
+                "email": "support@somecompany.com"
+            },
+            "issuer": "CN=localhost, OU='Some organizational unit', O='Some organization', L='Some city', ST='Some state', C=US"
+        }
+    },
+    {
+        "num": "openssl19280",
+        "issue": {
+            "serial": "7326551954834130299"
+        }
+    },
+    {
+        "num": "openssl19167",
+        "issue": {
+            "issuer": "C = cr, ST = Some-State, O = Internet Widgits Pty Ltd, CN = mariscoychicharon.com"
+        }
+    },
+    {
+        "num": "openssl19137",
+        "issue": {
+            "issuer": "C = US, O = Delta Air Lines Inc., OU = DELTA, CN = DAL-SHA2 L3 Low Root CA"
+        }
+    },
+    {
+        "num": "openssl19119",
+        "issue": {
+            "serial": "0xfa, 0x30, 0x0d"
+        }
+    },
+    {
+        "num": "openssl19095",
+        "issue": {
+            "issuer": "CN=test, OU=test, O=test, L=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "openssl18956",
+        "issue": {
+            "issuer": "CN=test, OU=test, O=test, L=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "openssl18879",
+        "issue": {
+            "issuer": "CN = kfldsjdfs, OU = kdlfsjfdskl, O = klsdfjkldfjsd, L = kdslf, ST = dkfs, C = KR"
+        }
+    },
+    {
+        "num": "openssl18836",
+        "issue": {
+            "serial": "1234567890",
+            "issuer": "CN=ca.example.com"
+        }
+    },
+    {
+        "num": "openssl18800",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "www.google.com",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "openssl18769",
+        "issue": {
+            "issuer": "CN = kjt.hebei.gov.cn"
+        }
+    },
+    {
+        "num": "openssl18753",
+        "issue": {
+            "serial": "1",
+            "issuer": "C=RU, CN=Example test CA, emailAddress=ca@example.org",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "99:EB:EE:D1:40:4C:F3:5C:76:00:23:5E:C2:C9:AD:83:39:73:60:8E"
+            }
+        }
+    },
+    {
+        "num": "openssl18708",
+        "issue": {
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "B4:11:33:F1:D7:E2:5E:F7:53:9E:20:22:10:4F:86:06:BF:1F:C9:5E"
+            },
+            "issuer": "CN=CA"
+        }
+    },
+    {
+        "num": "openssl18691",
+        "issue": {
+            "create authorityKeyIdentifier": [
+                {
+                    "KeyIdentifier": "4A:4A:CE:E8:D2:C1:D7:88:7C:26:FB:A8:7E:9C:BB:08:40:62:CD:3E"
+                },
+                {
+                    "KeyIdentifier": "C3:71:C6:BC:03:A7:97:FF:1D:9B:D4:5D:7F:E3:20:3F:49:42:2C:71"
+                },
+                {
+                    "KeyIdentifier": "C3:71:C6:BC:03:A7:97:FF:1D:9B:D4:5D:7F:E3:20:3F:49:42:2C:71"
+                },
+                {
+                    "KeyIdentifier": "78:CA:E3:3E:8F:16:B6:D6:9C:B3:06:6A:41:82:19:EE:C8:9F:2F:BB"
+                }
+            ],
+            "issuer": "C=LT, O=VI Registru Centras - I.k. 124110246, OU=Registru Centro Sertifikavimo Centras, CN=VI Registru Centras RCSC (IssuingCA-A)"
+        }
+    },
+    {
+        "num": "openssl18611",
+        "issue": {
+            "issuer": "CN=test, OU=test, O=test, L=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "openssl18600",
+        "issue": {
+            "issuer": "O=Example CA"
+        }
+    },
+    {
+        "num": "openssl18557",
+        "issue": {
+            "thisUpdae": "1995-05-02 02:12:26Z"
+        }
+    },
+    {
+        "num": "openssl18508",
+        "issue": {
+            "serial": "2",
+            "issuer": "DC = com, DC = cs, DC = ADserver, CN = ADserver-CSPQ202WINSQL-CA"
+        }
+    },
+    {
+        "num": "openssl18498",
+        "issue": {
+            "serial": "7",
+            "issuer": "C = GB, O = Certificate Transparency CA, ST = Wales, L = Erw Wen"
+        }
+    },
+    {
+        "num": "openssl18456",
+        "issue": {
+            "thisUpdae": "Jun  1 00:00:00 2022 GMT"
+        }
+    },
+    {
+        "num": "openssl18452",
+        "issue": {
+            "serial": "5a:61:b5:09:7e:ff:68:a2:44:ef:e6:81:47:af:fd:30:85:ed:b8:d2",
+            "issuer": "CN = localhost",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "35:FC:49:D8:BB:37:90:53:AF:28:5A:63:7B:5A:42:4C:E6:1D:83:82"
+            }
+        }
+    },
+    {
+        "num": "openssl18306",
+        "issue": {
+            "issuer": "CN=server.example"
+        }
+    },
+    {
+        "num": "openssl17804",
+        "issue": {
+            "serial": "1966311141864114178",
+            "issuer": "CN=TEST002, OU=DZH, O=Dazhihui, L=Shanghai, ST=SH, C=CN"
+        }
+    },
+    {
+        "num": "openssl17797",
+        "issue": {
+            "issuer": "CN=Testzertifikat, OU=mb24, O=mb24"
+        }
+    },
+    {
+        "num": "openssl17617",
+        "issue": {
+            "issuer": "CN=Company Name Relying Party"
+        }
+    },
+    {
+        "num": "openssl17580",
+        "issue": {
+            "serial": "16",
+            "issuer": "CN=ICAM Independent Test SubCA, OU=ICAM Test Cards, O=U.S. Government, L=test, ST=test, C=US",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "93A55B6BEE7A0BC33A5A1AB11D42FB080C3FDD46"
+            }
+        }
+    },
+    {
+        "num": "openssl17503",
+        "issue": {
+            "serial": "02",
+            "issuer": "CN=Root CA",
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "server.example",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "openssl17386",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "test.local",
+                "email": "test@qq.com"
+            },
+            "issuer": "CN=kafka-server1, OU=./, O=./, L=./, ST=./, C=CN"
+        }
+    },
+    {
+        "num": "openssl17286",
+        "issue": {
+            "issuer": "C=XX,ST=World"
+        }
+    },
+    {
+        "num": "openssl17195",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "test.local",
+                "email": "user@example.com"
+            },
+            "issuer": "CN=Intermediate CA, O=Sample Org, OU=Sample Org, L=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "openssl17134",
+        "issue": {
+            "serial": "2",
+            "issuer": "CN=SignPath Test Root CA, OU=Team FS, O=SignPath.io, L=Vienna, ST=Austria, C=AT"
+        }
+    },
+    {
+        "num": "openssl16927",
+        "issue": {
+            "issuer": "CN=CV Root CA v3, ST=Zug, O=Crypto Vally, C=CH"
+        }
+    },
+    {
+        "num": "openssl16861",
+        "issue": {
+            "issuer": "ISRG Root X1"
+        }
+    },
+    {
+        "num": "openssl16827",
+        "issue": {
+            "issuer": "CN=CA_sm3_sm2"
+        }
+    },
+    {
+        "num": "openssl16720",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "localhost",
+                "email": "admin@test.local"
+            },
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "5C:DE:BC:B6:3F:B7:36:21:F5:BD:E8:C7:BD:39:DC:68:62:75:BA:A6"
+            },
+            "issuer": "CN=etcd CA"
+        }
+    },
+    {
+        "num": "openssl16690",
+        "issue": {
+            "serial": "HKSQaz6cjzE0H/gy4+saRJLkG+I",
+            "issuer": "CN=ca-ecdsa-secp256r1, O=test"
+        }
+    },
+    {
+        "num": "openssl16681",
+        "issue": {
+            "issuer": "CN=cryptography CA, OU=cryptography CA, O=cryptography CA, L=cryptography CA, ST=cryptography CA, C=US"
+        }
+    },
+    {
+        "num": "openssl16664",
+        "issue": {
+            "issuer": "OU = Copyright (c) 1997 Microsoft Corp., OU = Microsoft Corporation, CN = Microsoft Root Authority"
+        }
+    },
+    {
+        "num": "openssl16442",
+        "issue": {
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": ""
+            }
+        }
+    },
+    {
+        "num": "openssl16304",
+        "issue": {
+            "issuer": "CN=example.com"
+        }
+    },
+    {
+        "num": "openssl16300",
+        "issue": {
+            "serial": "1"
+        }
+    },
+    {
+        "num": "openssl16282",
+        "issue": {
+            "serial": "VRvJoo0TFD7JOhJm7VTW0j",
+            "issuer": "CN = Sectigo RSA Organization Validation Secure Server CA, O = Sectigo Limited, L = Salford, ST = Greater Manchester, C = GB"
+        }
+    },
+    {
+        "num": "openssl16110",
+        "issue": {
+            "issuer": "CN=GEM.SMCB-CA41 TEST-ONLY,SERIALNUMBER=001,OU=Institution des Gesundheitswesens-CA der Telematikinfrastruktur,O=gematik GmbH NOT-VALID,C=DE",
+            "serial": "001"
+        }
+    },
+    {
+        "num": "openssl16080",
+        "issue": {
+            "issuer": "CN=test, OU=test, O=test, L=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "openssl16053",
+        "issue": {
+            "issuer": "CN = Root CA",
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "server.example",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "openssl16044",
+        "issue": {
+            "serial": "0"
+        }
+    },
+    {
+        "num": "openssl16041",
+        "issue": {
+            "serial": "X509_get0_serialNumber(ctx->certOut)"
+        }
+    },
+    {
+        "num": "openssl15969",
+        "issue": {
+            "issuer": "CN = buildbot.openssl.org"
+        }
+    },
+    {
+        "num": "openssl15884",
+        "issue": {
+            "serial": "4E37BBA5"
+        }
+    },
+    {
+        "num": "openssl15675",
+        "issue": {
+            "issuer": "CN=*.techschool.guru, emailAddress=root.guru@gmail.com"
+        }
+    },
+    {
+        "num": "openssl15389",
+        "issue": {
+            "serial": "CTAKBggqhkjOPQQDAjAnMQswCQYDVQQGEwJVUzEYMBYGA1UEAwwPY3J5cHRvZ3JhcGh5IENBMB4XDTE3MDEwMTEyMDEwMFoXDTM4MTIzMTA4MzAwMFowJzELMAkGA1UEBhMCVVMxGDAWBgNVBAMMD2NyeXB0b2dyYXBoeSBDQTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABBj/z7v5Obj13cPu"
+        }
+    },
+    {
+        "num": "openssl15375",
+        "issue": {
+            "issuer": "CN=localhost"
+        }
+    },
+    {
+        "num": "openssl15290",
+        "issue": {
+            "serial": "5128ab30b72a3de58c4f5eb7c45acfd704217e75",
+            "issuer": "CN=OpenSC"
+        }
+    },
+    {
+        "num": "openssl15254",
+        "issue": {
+            "serial": "16e2d23524b2b48ac16a528f67b5ea7de4c9e30"
+        }
+    },
+    {
+        "num": "openssl15146",
+        "issue": {
+            "serial": "ae:2a:f7:8f:2f:d7:3d:53:14:c3",
+            "issuer": "CN = This is my self-signed certificate",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "F8:0F:39:96:A6:DF:9F:67:10:A0:04:AC:B3:59:E6:E2:16:8C:24:56"
+            }
+        }
+    },
+    {
+        "num": "openssl15071",
+        "issue": {
+            "serial": "2",
+            "issuer": "O = Example CA",
+            "create Subject Key Identifier": {
+                "KeyIdentifier": "59:5A:8E:3D:1D:C7:C5:31:BC:5C:BC:19:D4:F8:A5:C7:FB:36:43:ED"
+            },
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "B9:7C:DE:E5:94:47:D5:3E:6E:D8:0E:8C:FD:F5:62:09:DC:BC:AA:CF"
+            }
+        }
+    },
+    {
+        "num": "openssl14813",
+        "issue": {
+            "serial": "100"
+        }
+    },
+    {
+        "num": "openssl14780",
+        "issue": {
+            "issuer": "C = US, O = Let's Encrypt, CN = R3"
+        }
+    },
+    {
+        "num": "openssl14694",
+        "issue": {
+            "issuer": "/O=openssl_cmp"
+        }
+    },
+    {
+        "num": "openssl14509",
+        "issue": {
+            "serial": "10",
+            "issuer": "emailAddress=boss@example.com"
+        }
+    },
+    {
+        "num": "openssl14470",
+        "issue": {
+            "issuer": "CN = acme.services"
+        }
+    },
+    {
+        "num": "openssl14457",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "POC Root CA",
+                "email": "admin@test.local"
+            },
+            "issuer": "C=CA, ST=State, L=City, OU=POC, CN=POC Root CA"
+        }
+    },
+    {
+        "num": "openssl14385",
+        "issue": {
+            "issuer": "C=CN, ST=ZheJiang, L=HangZhou"
+        }
+    },
+    {
+        "num": "openssl14190",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://timestamp.comodoca.com/rfc3161",
+                "DNS": "test.local",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "openssl14184",
+        "issue": {
+            "issuer": "CN=Device-01, O=Test Org, OU=Public Services, SERIALNUMBER=00-11-22-33"
+        }
+    },
+    {
+        "num": "openssl14175",
+        "issue": {
+            "issuer": "CN=Test srv gost2012_256:XA, OU=OpenSSL CA, O=Cryptocom, L=Moscow, C=RU"
+        }
+    },
+    {
+        "num": "openssl13969",
+        "issue": {
+            "issuer": "C = AU, ST = Some-State, O = Internet Widgits Pty Ltd"
+        }
+    },
+    {
+        "num": "openssl13963",
+        "issue": {
+            "issuer": "CN=DT,OU=UNSC,O=UNGA,ST=NYS,C=UN"
+        }
+    },
+    {
+        "num": "openssl13944",
+        "issue": {
+            "thisUpdae": "20730104163541Z"
+        }
+    },
+    {
+        "num": "openssl13931",
+        "issue": {
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "hash"
+            },
+            "issuer": "C = DE, O = Test Org, CN = Test RSA PSS Root-CA"
+        }
+    },
+    {
+        "num": "openssl13851",
+        "issue": {
+            "issuer": "CN=OpenSSL Test Intermediate CA, OU=FOR TESTING PURPOSES ONLY, O=OpenSSL Group, L=test, ST=test, C=UK"
+        }
+    },
+    {
+        "num": "openssl13809",
+        "issue": {
+            "serial": "C041EEF44A7F0000"
+        }
+    },
+    {
+        "num": "openssl13793",
+        "issue": {
+            "serial": "b8:65:a6:40:9f:a6:83:1f",
+            "issuer": "O = Test CA"
+        }
+    },
+    {
+        "num": "openssl13779",
+        "issue": {
+            "serial": "AT",
+            "issuer": "CN=test, OU=test, O=test, L=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "openssl13723",
+        "issue": {
+            "issuer": "CN=test, OU=test, O=test, L=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "openssl13718",
+        "issue": {
+            "serial": "1607599569631"
+        }
+    },
+    {
+        "num": "openssl13714",
+        "issue": {
+            "serial": "74:5f:dd:21:c4:74:e1:d4:6f:7f:27:76:22:a5:66:5c:29:e9:a9:77",
+            "issuer": "CN = t"
+        }
+    },
+    {
+        "num": "openssl13698",
+        "issue": {
+            "issuer": "CN=PersonSim, OU=PersonSim",
+            "serial": "514496e61eeca680d09b25e273d15cf6d0b2d20"
+        }
+    },
+    {
+        "num": "openssl13565",
+        "issue": {
+            "serial": "...",
+            "issuer": "C=FR, O=Dhimyotis, CN=Certigna",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "..."
+            }
+        }
+    },
+    {
+        "num": "openssl13558",
+        "issue": {
+            "issuer": "C=US, ST=CA, L=San Francisco, O=Example Company, OU=Example Company Unit, CN=Alice Ascii Domain"
+        }
+    },
+    {
+        "num": "openssl13471",
+        "issue": {
+            "thisUpdae": "Nov 19 23:05:22 2020 GMT",
+            "serial": "38:e4:3e:c8:40:ec:02:9c:b9:57:9d:02:56:36:f2:46:0f:89:6f:9e",
+            "issuer": "CN = root"
+        }
+    },
+    {
+        "num": "openssl13403",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://127.0.0.1:8080/crl.der",
+                "DNS": "test.local",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "openssl13352",
+        "issue": {
+            "serial": "AAAAAAABFUtaw5Q",
+            "issuer": "CN=GlobalSign Root CA, OU=Root CA, O=GlobalSign nv-sa, L=test, ST=test, C=BE"
+        }
+    },
+    {
+        "num": "openssl13283",
+        "issue": {
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": ""
+            }
+        }
+    },
+    {
+        "num": "openssl13223",
+        "issue": {
+            "serial": "71928",
+            "issuer": "CN = TEST-ELGA-u0x27vo, O = TEST-ELGA, OU = TEST-ELGA-EB12, C = AT"
+        }
+    },
+    {
+        "num": "openssl13154",
+        "issue": {
+            "issuer": "C = BE, O = GlobalSign nv-sa, CN = GlobalSign RSA OV SSL CA 2018"
+        }
+    },
+    {
+        "num": "openssl12940",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "localhost",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "openssl12839",
+        "issue": {
+            "issuer": "CN=Test CA rsa, OU=OpenSSL CA, O=Cryptocom, L=Moscow, C=RU",
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "test.local",
+                "email": "openssl@cryptocom.ru"
+            }
+        }
+    },
+    {
+        "num": "openssl12838",
+        "issue": {
+            "issuer": "CN=Test CA gost2001:A, OU=OpenSSL CA, O=Cryptocom, L=Moscow, C=RU"
+        }
+    },
+    {
+        "num": "openssl12752",
+        "issue": {
+            "serial": "11:6b:8e:f3:fa:95:86:6a:3f:cd:d4:82:2e:ac:83:e1:3c:bd:ac:d0",
+            "issuer": "CN = RootCA"
+        }
+    },
+    {
+        "num": "openssl12697",
+        "issue": {
+            "issuer": "CN=Test CA gost2001:A1, OU=OpenSSL CA, O=Cryptocom, L=Moscow, C=RU"
+        }
+    },
+    {
+        "num": "openssl12695",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://name.dom.com/whatever",
+                "DNS": "dns.name.com",
+                "email": "alt1@email.com"
+            },
+            "issuer": "CN=CA1, O=Demo1, C=US"
+        }
+    },
+    {
+        "num": "openssl12551",
+        "issue": {
+            "issuer": "CN = ee-self-signed"
+        }
+    },
+    {
+        "num": "openssl11859",
+        "issue": {
+            "issuer": "C = GB, ST = Berkshire, L = Newbury, O = My Company Ltd"
+        }
+    },
+    {
+        "num": "openssl11772",
+        "issue": {
+            "serial": "-24 (-0x18)",
+            "issuer": "C=CN, ST=PN, L=CN, O=ON, OU=UN, CN=L\\xA5rong Yang"
+        }
+    },
+    {
+        "num": "openssl11721",
+        "issue": {
+            "thisUpdae": "20170123093000Z"
+        }
+    },
+    {
+        "num": "openssl11706",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "www.mysite.com",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "openssl11685",
+        "issue": {
+            "serial": "2147483647",
+            "issuer": "CN=test, OU=test, O=test, L=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "openssl11625",
+        "issue": {
+            "serial": "EXqHq5",
+            "issuer": "CN = self.netapp.com, C = US, ST = NC, L = RTP, O = NetApp, OU = SDFI, emailAddress = rtp@netapp.com",
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "www.netapp.com",
+                "email": "sec@netapp.com"
+            }
+        }
+    },
+    {
+        "num": "openssl11567",
+        "issue": {
+            "serial": "0 (0x0)",
+            "issuer": "C=CN, ST=PN, L=CN, O=ON, OU=UN, CN=Herong Yang"
+        }
+    },
+    {
+        "num": "openssl11456",
+        "issue": {
+            "issuer": "CN=*********************"
+        }
+    },
+    {
+        "num": "openssl11169",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "www.foo.com",
+                "email": "admin@test.local"
+            },
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "3A:5F:6C:71:A8:F3:4C:48:F5:8B:41:25:22:7A:16:8C:05:2F:9D:DB"
+            },
+            "issuer": "C = US, O = Foo Inc, CN = www.foo.com"
+        }
+    },
+    {
+        "num": "openssl11032",
+        "issue": {
+            "issuer": "DC = com, DC = blah, CN = blah-martin-VSRV-MER-MCSM2-CA-1"
+        }
+    },
+    {
+        "num": "openssl10716",
+        "issue": {
+            "serial": "38 63 B9 66"
+        }
+    },
+    {
+        "num": "openssl10688",
+        "issue": {
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": ""
+            }
+        }
+    },
+    {
+        "num": "openssl10599",
+        "issue": {
+            "issuer": "CN=CS, OU=beiyangyuan, O=TJU, L=TJ5, ST=CN, C=CN"
+        }
+    },
+    {
+        "num": "openssl10597",
+        "issue": {
+            "issuer": "CN=test, OU=test, O=test, L=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "openssl10517",
+        "issue": {
+            "serial": "12174721212992351602"
+        }
+    },
+    {
+        "num": "openssl10466",
+        "issue": {
+            "serial": "the TSA name and serial number identify a unique TimeStampToken"
+        }
+    },
+    {
+        "num": "openssl10393",
+        "issue": {
+            "issuer": "CN=Test Server Cert, OU=FOR TESTING PURPOSES ONLY, O=OpenSSL Group, C=UK"
+        }
+    },
+    {
+        "num": "openssl10157",
+        "issue": {
+            "serial": "9d:4f:14:f8:c3:21:72:ba",
+            "issuer": "C=CN, ST=guangdong, O=ooxx, OU=oxx, CN=148.**.**.**/emailAddress=martin_**@**.com",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "73:17:4F:BA:08:A8:16:14:1D:25:98:0A:87:E8:5B:8C:F6:C2:7E:89"
+            }
+        }
+    },
+    {
+        "num": "openssl9951",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "localhost",
+                "email": "xmpp@localhost"
+            }
+        }
+    },
+    {
+        "num": "openssl9950",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "localhost",
+                "email": "xmpp@localhost"
+            }
+        }
+    },
+    {
+        "num": "openssl9829",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "localhost",
+                "email": "admin@test.local"
+            },
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "hash"
+            }
+        }
+    },
+    {
+        "num": "openssl9816",
+        "issue": {
+            "issuer": "CN=中文,O=gzsd.com,OU=sdtech,ST=Beijing City,L=beijing,C=CN"
+        }
+    },
+    {
+        "num": "openssl9791",
+        "issue": {
+            "issuer": "CN=localhost"
+        }
+    },
+    {
+        "num": "openssl9276",
+        "issue": {
+            "serial": "QUQ3RTNZWjANBgkqhkiG9w0BAQsFADB6MQswCQYDVQQG"
+        }
+    },
+    {
+        "num": "openssl9187",
+        "issue": {
+            "issuer": "C = ES, O = IZENPE S.A., CN = Izenpe.com"
+        }
+    },
+    {
+        "num": "openssl9171",
+        "issue": {
+            "issuer": "C = US, ST = CA, O = Real Time Innovations, CN = dtlsexampleECdsa, emailAddress = meECdsa@rti.com"
+        }
+    },
+    {
+        "num": "openssl9043",
+        "issue": {
+            "issuer": "CN=foo.com"
+        }
+    },
+    {
+        "num": "openssl8814",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "openssl.org",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "openssl8795",
+        "issue": {
+            "issuer": "C=GB, ST=London, L=London, O=Example Org, OU=Delivery, CN=example.org root CA"
+        }
+    },
+    {
+        "num": "openssl8443",
+        "issue": {
+            "issuer": "CN = localhost"
+        }
+    },
+    {
+        "num": "openssl8369",
+        "issue": {
+            "issuer": "CN = localhost",
+            "serial": "2E4B37BD14A4DA1E"
+        }
+    },
+    {
+        "num": "openssl8339",
+        "issue": {
+            "serial": "20ABB6B7F62361"
+        }
+    },
+    {
+        "num": "openssl8317",
+        "issue": {
+            "issuer": "C=PL"
+        }
+    },
+    {
+        "num": "openssl8189",
+        "issue": {
+            "issuer": "CN=localhost"
+        }
+    },
+    {
+        "num": "openssl8055",
+        "issue": {
+            "thisUpdae": "190121130654Z"
+        }
+    },
+    {
+        "num": "openssl7901",
+        "issue": {
+            "issuer": "CN = Some Client"
+        }
+    },
+    {
+        "num": "openssl7604",
+        "issue": {
+            "issuer": "CN=ROOT-CA, O=special.net"
+        }
+    },
+    {
+        "num": "openssl7491",
+        "issue": {
+            "issuer": "C=CN, ST=Beijing, L=Haidian, O=Datang, OU=SDT, CN=Shixun, emailAddress=dongzy08@163.com"
+        }
+    },
+    {
+        "num": "openssl7435",
+        "issue": {
+            "serial": "01",
+            "issuer": "CN=Softing OpcUa Test Server (self signed EC), OU=IA1301, O=Softing IA GmbH, L=Haar (Munich), ST=Bayern, C=DE",
+            "create Issuer Alternative Name": {
+                "URI": "urn:w-ed1/Softing/OpcUa/TestServer",
+                "DNS": "w-ed1.dhcp.softing.com",
+                "email": "support.automation@softing.com"
+            }
+        }
+    },
+    {
+        "num": "openssl7426",
+        "issue": {
+            "serial": "CertificateSerialNumber"
+        }
+    },
+    {
+        "num": "openssl7337",
+        "issue": {
+            "issuer": "C=Foo"
+        }
+    },
+    {
+        "num": "openssl7336",
+        "issue": {
+            "issuer": "C=SK, CN=Test"
+        }
+    },
+    {
+        "num": "openssl7210",
+        "issue": {
+            "issuer": "C = AU, ST = NSW, L = Sydney, O = Instinct Systems Pty Ltd, OU = IT, CN = www.instinctsystems.com.au, emailAddress = support@instinctsystems.com.au"
+        }
+    },
+    {
+        "num": "openssl7151",
+        "issue": {
+            "serial": "AT",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "Tb4PUSHDpoMGb4hM/a0bWLhD2Sk"
+            },
+            "issuer": "CN=Example CA, O=Example CA"
+        }
+    },
+    {
+        "num": "openssl7098",
+        "issue": {
+            "issuer": "CN = Hewlett Packard Enterprise Remote Device Access Test Local CA, OU = Remote Device Access, O = Hewlett Packard Enterprise Company, L = root, ST = A, C = US",
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "test.local",
+                "email": "rda@hpe.com"
+            }
+        }
+    },
+    {
+        "num": "openssl7091",
+        "issue": {
+            "issuer": "/C=US/O=Google Trust Services/CN=Google Internet Authority G3",
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "*.google.com",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "openssl7062",
+        "issue": {
+            "serial": "0x2D26E0730ABDDD1B"
+        }
+    },
+    {
+        "num": "openssl7059",
+        "issue": {
+            "issuer": "CN = localhost"
+        }
+    },
+    {
+        "num": "openssl7055",
+        "issue": {
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "keyid:always,issuer"
+            }
+        }
+    },
+    {
+        "num": "openssl7045",
+        "issue": {
+            "serial": "cf:e1:c6:62:e8:a7:9c:6f",
+            "issuer": "CN = client"
+        }
+    },
+    {
+        "num": "openssl6837",
+        "issue": {
+            "serial": "1234567812345678"
+        }
+    },
+    {
+        "num": "openssl6698",
+        "issue": {
+            "issuer": "CN = Leaf",
+            "serial": "123456"
+        }
+    },
+    {
+        "num": "openssl6611",
+        "issue": {
+            "issuer": "CN = GnuTLS Test CA"
+        }
+    },
+    {
+        "num": "openssl6479",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "the-very-long-domain-name-in-the-internet-for-generate-csr-strg.uz",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "openssl6332",
+        "issue": {
+            "issuer": "CN=jons_cert"
+        }
+    },
+    {
+        "num": "openssl6289",
+        "issue": {
+            "issuer": "/C=NN/ST=NN/L=NN/O=NN/OU=NN/CN=test-ca/emailAddress=noahd@test-ca"
+        }
+    },
+    {
+        "num": "openssl6212",
+        "issue": {
+            "serial": "46 60 F8 49 D8 A4 DE 91 2B 0B 48 5F 2C 50 E1 49 4B BB"
+        }
+    },
+    {
+        "num": "openssl6058",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "localhost",
+                "email": "admin@test.local"
+            },
+            "issuer": "CN=localhost, C=DE, ST=BW, O=SAP"
+        }
+    },
+    {
+        "num": "openssl5840",
+        "issue": {
+            "issuer": "Country Name (2 letter code) [XX]:State or Province Name (full name) [World]:Locality Name (eg, city) [Somewhere cyrillic-АБВ-Яабв-я greek-ΑΒΓ-Ωαβγ-<<<<invalid character>>>>>"
+        }
+    },
+    {
+        "num": "openssl5743",
+        "issue": {
+            "serial": "ALnu1NlVpZ6z",
+            "issuer": "CN=Test Server Cert, OU=FOR TESTING PURPOSES ONLY, O=OpenSSL Group, L=, ST=, C=UK",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "4af33300044f47dc39259a27e7af4bbca06dbab"
+            }
+        }
+    },
+    {
+        "num": "openssl5605",
+        "issue": {
+            "issuer": "DC=org, DC=opensciencegrid, C=US, O=OSG Software, OU=Services, CN=blin-latitude.localdomain"
+        }
+    },
+    {
+        "num": "openssl5368",
+        "issue": {
+            "issuer": "CN=ASN1:SEQUENCE:hex_name"
+        }
+    },
+    {
+        "num": "openssl5233",
+        "issue": {
+            "issuer": "DC=org, DC=OpenSSL, O=users, DC=DEV, CN=John Doe"
+        }
+    },
+    {
+        "num": "openssl5168",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://cacerts.digicert.com/DigiCertSHA2SecureServerCA.crt",
+                "DNS": "test.local",
+                "email": "admin@test.local"
+            },
+            "issuer": "C=US, O=DigiCert Inc, CN=DigiCert SHA2 Secure Server CA"
+        }
+    },
+    {
+        "num": "openssl5133",
+        "issue": {
+            "serial": "4105",
+            "issuer": "C = DE, ST = Sachsen, L = Leipzig, O = DBFZ Deutsches Biomasseforschungszentrum gemeinnuetzige GmbH, OU = IT, CN = DBFZ CA INTERN ROOT, emailAddress = support@dbfz.de",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "E2:E9:20:42:29:83:C4:77:8C:87:AB:FA:4B:A1:A9:C4:CE:00:BD:39"
+            }
+        }
+    },
+    {
+        "num": "openssl5115",
+        "issue": {
+            "issuer": ""
+        }
+    },
+    {
+        "num": "openssl5114",
+        "issue": {
+            "issuer": ""
+        }
+    },
+    {
+        "num": "openssl5052",
+        "issue": {
+            "serial": "1",
+            "issuer": "CN=TestCommonName"
+        }
+    },
+    {
+        "num": "openssl5037",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "dom.ain",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "openssl4819",
+        "issue": {
+            "issuer": "/C=RU/ST=Some-State/O=Internet Widgits Pty Ltd/CN=localhost",
+            "serial": "AIqASWpVLKln"
+        }
+    },
+    {
+        "num": "openssl4794",
+        "issue": {
+            "serial": "0",
+            "issuer": "CN=Go Daddy Root Certificate Authority - G2, OU=GoDaddy.com, Inc., O=GoDaddy.com, L=Scottsdale, ST=Arizona, C=US"
+        }
+    },
+    {
+        "num": "openssl4786",
+        "issue": {
+            "serial": "X509_get_serialNumber(issuer)"
+        }
+    },
+    {
+        "num": "openssl4736",
+        "issue": {
+            "thisUpdae": "11/12/2017 12:14:05 PM"
+        }
+    },
+    {
+        "num": "openssl4708",
+        "issue": {
+            "issuer": "C=GB, ST=London, L=London, O=Alice Security, CN=alice.aclu.org"
+        }
+    },
+    {
+        "num": "openssl4512",
+        "issue": {
+            "issuer": "CN=test"
+        }
+    },
+    {
+        "num": "openssl4445",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "www.google.com",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "openssl4320",
+        "issue": {
+            "serial": "2a:2a:ba:c2:cd:b1:6a:74:80:3a:2f:b8:88:24:42"
+        }
+    },
+    {
+        "num": "openssl3988",
+        "issue": {
+            "serial": "serial number"
+        }
+    },
+    {
+        "num": "openssl3771",
+        "issue": {
+            "serial": "009B8D652137D6C283",
+            "issuer": "CN=Test CA, OU=Home, O=Home, L=Yoshkar-Ola, ST=Marij El, C=RU",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "368D4F2BD3787AB528B199912CF196960CE8655C"
+            }
+        }
+    },
+    {
+        "num": "openssl3767",
+        "issue": {
+            "issuer": "CN=ease CA"
+        }
+    },
+    {
+        "num": "openssl3534",
+        "issue": {
+            "issuer": "C=**/ST=**/L=*****/O=***/OU=***********/CN=ism-linux-server/emailAddress=*****************"
+        }
+    },
+    {
+        "num": "openssl3479",
+        "issue": {
+            "serial": "01",
+            "issuer": "C=US, ST=Oregon, L=Portland, O=Company Name, OU=Org, CN=127.0.0.1ca"
+        }
+    },
+    {
+        "num": "openssl3297",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "räksmörgås.se",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "openssl3235",
+        "issue": {
+            "serial": "AKrFnEdZSFEY",
+            "issuer": "C=XX/L=Default City/O=Default Company Ltd"
+        }
+    },
+    {
+        "num": "openssl3020",
+        "issue": {
+            "issuer": "CN=RapidSSL SHA256 CA, O=GeoTrust Inc., C=US"
+        }
+    },
+    {
+        "num": "openssl2963",
+        "issue": {
+            "serial": "bd:ec:ad:df:5e:82:78:80",
+            "issuer": "CN = localhost"
+        }
+    },
+    {
+        "num": "openssl2878",
+        "issue": {
+            "issuer": "CN=localhost"
+        }
+    },
+    {
+        "num": "openssl2877",
+        "issue": {
+            "issuer": "C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert High Assurance EV Root CA"
+        }
+    },
+    {
+        "num": "openssl2610",
+        "issue": {
+            "issuer": "CN=test, OU=test, O=test, L=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "openssl2126",
+        "issue": {
+            "serial": "AT",
+            "issuer": "CN=test_pfx, OU=test, O=cryptopro.ru, L=, ST=, C=",
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "test.local",
+                "email": "test@cryptopro.ru"
+            }
+        }
+    },
+    {
+        "num": "openssl2033",
+        "issue": {
+            "issuer": "CN=ca"
+        }
+    },
+    {
+        "num": "openssl1887",
+        "issue": {
+            "serial": "7BA9BF38FFC6C26B2B90747C333F0B26835E75F8"
+        }
+    },
+    {
+        "num": "openssl1661",
+        "issue": {
+            "issuer": "C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3"
+        }
+    },
+    {
+        "num": "openssl1381",
+        "issue": {
+            "issuer": "O=1234567890, CN=123456789"
+        }
+    },
+    {
+        "num": "openssl993",
+        "issue": {
+            "issuer": "CN=eParaksts LZI1 (TSA1)"
+        }
+    },
+    {
+        "num": "openssl222",
+        "issue": {
+            "issuer": "CN=中文, OU=中文, O=中文, L=中文, ST=中文, C=CN"
+        }
+    },
+    {
+        "num": "openssl111",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": ".foo.bar",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "gnutls43",
+        "issue": {
+            "serial": "The certificate serial number value appearing in the report goes here",
+            "issuer": "The certificate issuer field information appearing in the report goes here"
+        }
+    },
+    {
+        "num": "gnutls53",
+        "issue": {
+            "thisUpdae": "20151125150551Z"
+        }
+    },
+    {
+        "num": "gnutls151",
+        "issue": {
+            "serial": "0x48eca1e3c658be04c547c1eca67a6433",
+            "issuer": "CN=VeriSign Class 3 Extended Validation SSL SGC CA,OU=Terms of use at https://www.verisign.com/rpa (c)06,OU=VeriSign Trust Network,O=VeriSign\\, Inc.,C=US"
+        }
+    },
+    {
+        "num": "gnutls166",
+        "issue": {
+            "serial": "1",
+            "issuer": "CN=CSCA-HELLAS, OU=Hellenic Police, O=Hellenic Republic, L=test, ST=test, C=GR"
+        }
+    },
+    {
+        "num": "gnutls181",
+        "issue": {
+            "serial": "The serial number MUST be a positive integer assigned by the CA to each certificate"
+        }
+    },
+    {
+        "num": "gnutls191",
+        "issue": {
+            "serial": "ALcX+trIX5yn",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "E3:76:B4:62:05:2B:2F:D4:B9:12:5B:B0:EA:E0:4F:10:C8:C0:C5:B0"
+            },
+            "issuer": "CN=localhost"
+        }
+    },
+    {
+        "num": "gnutls196",
+        "issue": {
+            "serial": "1002",
+            "issuer": "C=US,O=my.domain.com,CN=ovirt.my.domain.com.71975"
+        }
+    },
+    {
+        "num": "gnutls202",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://crt.comodoca.com/COMODORSADomainValidationSecureServerCA.crt",
+                "DNS": "test.local",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "gnutls271",
+        "issue": {
+            "serial": "5b:41:e4:01:ed:6e:b0:1a:b7:49:cc:47:6e:2c:2e:25:aa:70:10:6b",
+            "issuer": "C = xx, ST = x, L = x, O = x, OU = x, CN = ca, emailAddress = x",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "2D:FF:75:92:8B:0E:F3:36:C0:D4:D3:58:D1:56:CA:F5:B2:39:E5:73"
+            }
+        }
+    },
+    {
+        "num": "gnutls379",
+        "issue": {
+            "thisUpdae": "YYMMDDHHMMSSZ"
+        }
+    },
+    {
+        "num": "gnutls403",
+        "issue": {
+            "issuer": "CN = system:admin"
+        }
+    },
+    {
+        "num": "gnutls435",
+        "issue": {
+            "serial": "18446744073709551617"
+        }
+    },
+    {
+        "num": "gnutls495",
+        "issue": {
+            "serial": "AIyH7B0gu6Ef",
+            "issuer": "CN=cc, OU=cc, O=cc, L=cc, ST=cc, C=cc"
+        }
+    },
+    {
+        "num": "gnutls496",
+        "issue": {
+            "serial": "02 30 36 54 d3 43 21 60",
+            "issuer": "CN=cc, ST=cc, L=cc, O=cc, OU=cc, C=cc"
+        }
+    },
+    {
+        "num": "gnutls529",
+        "issue": {
+            "serial": "3c1972a0130e179003936fcf2294b64e9d0f16"
+        }
+    },
+    {
+        "num": "gnutls553",
+        "issue": {
+            "issuer": "CN=Certificate Authority, OU=<censored unit>, O=<censored org>"
+        }
+    },
+    {
+        "num": "gnutls569",
+        "issue": {
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "48:db:cd:de:8e:e9:49:72:5a:88:e8:b1:d8:3d:07:b3:b9:6b:66:50"
+            }
+        }
+    },
+    {
+        "num": "gnutls690",
+        "issue": {
+            "serial": "ALllB5+ixBXbLJKkHn9ofl4w",
+            "issuer": "CN=Acme Co, O=Acme Co"
+        }
+    },
+    {
+        "num": "gnutls693",
+        "issue": {
+            "serial": "d6dc2aaea926ff94854e7d3eb310c6349714e8e6"
+        }
+    },
+    {
+        "num": "gnutls694",
+        "issue": {
+            "issuer": "CN=VeriSign Class 3 Public Primary Certification Authority - G5,OU=(c) 2006 VeriSign\\, Inc. - For authorized use only,OU=VeriSign Trust Network,O=VeriSign\\, Inc.,C=US"
+        }
+    },
+    {
+        "num": "gnutls698",
+        "issue": {
+            "issuer": "CN=GeoTrust Global CA,O=GeoTrust Inc.,C=US"
+        }
+    },
+    {
+        "num": "gnutls701",
+        "issue": {
+            "serial": "0x59897b84004ff2ed",
+            "issuer": "CN=GnuTLS Test CA"
+        }
+    },
+    {
+        "num": "gnutls722",
+        "issue": {
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "EC:0D:39:91:6E:0F:CF:32:01:C6:A8:B5:18:37:C2:C9:C0:BA:E2:8D"
+            }
+        }
+    },
+    {
+        "num": "gnutls765",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://crl.initech.lan/Initech_Root_CA.crl",
+                "DNS": "test.local",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "gnutls767",
+        "issue": {
+            "issuer": "CN=Initech Root CA, OU=Initech, O=Initech"
+        }
+    },
+    {
+        "num": "gnutls776",
+        "issue": {
+            "issuer": "CN=test, OU=test, O=test, L=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "gnutls809",
+        "issue": {
+            "issuer": "CN=Test CA"
+        }
+    },
+    {
+        "num": "gnutls811",
+        "issue": {
+            "serial": "0x00e120b43d69e2e4d8",
+            "issuer": "CN=redacted"
+        }
+    },
+    {
+        "num": "gnutls833",
+        "issue": {
+            "serial": "0x00ec5dca0f931ef8ab",
+            "issuer": "CN=localhost"
+        }
+    },
+    {
+        "num": "gnutls840",
+        "issue": {
+            "issuer": "CN=test, OU=test, O=test, L=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "gnutls861",
+        "issue": {
+            "serial": "1"
+        }
+    },
+    {
+        "num": "gnutls864",
+        "issue": {
+            "thisUpdae": "0103010100Z"
+        }
+    },
+    {
+        "num": "gnutls870",
+        "issue": {
+            "issuer": "CN=CS, OU=beiyangyuan, O=TJU, L=TJ5, ST=CN, C=CN"
+        }
+    },
+    {
+        "num": "gnutls873",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "abc.com, k.abc.com, h5e.com, www.baidu.com",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "gnutls885",
+        "issue": {
+            "issuer": "CN=CS, OU=beiyangyuAn, O=TJU, L=TJ, ST=TJ, C=CN"
+        }
+    },
+    {
+        "num": "gnutls887",
+        "issue": {
+            "issuer": "CN=CS, OU=beiyangyuan, O=TJU, L=TJ, ST=TJ, C=CN"
+        }
+    },
+    {
+        "num": "gnutls946",
+        "issue": {
+            "serial": "fffe43245521"
+        }
+    },
+    {
+        "num": "gnutls968",
+        "issue": {
+            "serial": "03a081e7536daaa191406e66046a8cc59bfe",
+            "issuer": "CN=Let's Encrypt Authority X3,O=Let's Encrypt,C=US",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "d0fca29770368ad5e8b43841c0e9db19646ea92c"
+            }
+        }
+    },
+    {
+        "num": "gnutls971",
+        "issue": {
+            "thisUpdae": "2049-12-31"
+        }
+    },
+    {
+        "num": "gnutls994",
+        "issue": {
+            "issuer": "C=US,O=VeriSign\\, Inc.,OU=Class 3 Public Primary Certification Authority"
+        }
+    },
+    {
+        "num": "gnutls1003",
+        "issue": {
+            "issuer": "CN=NCRL,OU=DDST,O=SJTU,ST=SH,C=CN"
+        }
+    },
+    {
+        "num": "gnutls1008",
+        "issue": {
+            "serial": "0x6a6d5a985263e1676288c3a67c3d61d3",
+            "issuer": "CN=COMODO RSA Extended Validation Secure Server CA,O=COMODO CA Limited,L=Salford,ST=Greater Manchester,C=GB"
+        }
+    },
+    {
+        "num": "gnutls1012",
+        "issue": {
+            "issuer": "CN=COMODO RSA Certification Authority,O=COMODO CA Limited,L=Salford,ST=Greater Manchester,C=GB"
+        }
+    },
+    {
+        "num": "gnutls1062",
+        "issue": {
+            "serial": "0x0caca7602da89b50c3820b33518c827a",
+            "issuer": "CN=DigiCert SHA2 Secure Server CA,O=DigiCert Inc,C=US"
+        }
+    },
+    {
+        "num": "gnutls1126",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://crl.initech.lan/Initech_Root_CA.crl",
+                "DNS": "test.local",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "gnutls1132",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://.$DOMAIN.$TLD",
+                "DNS": ".$DOMAIN.$TLD",
+                "email": ".\\$DOMAIN.\\$TLD"
+            }
+        }
+    },
+    {
+        "num": "gnutls1135",
+        "issue": {
+            "thisUpdae": "Dec 13 08:24:54 2020 GMT"
+        }
+    },
+    {
+        "num": "gnutls1139",
+        "issue": {
+            "serial": "0x04f78efb758d89606ce87baa6471c832d949",
+            "issuer": "CN=Let's Encrypt Authority X3,O=Let's Encrypt,C=US"
+        }
+    },
+    {
+        "num": "gnutls1144",
+        "issue": {
+            "serial": "1fbcd9fed9ca1aaedb8882209f96bcded324d777",
+            "issuer": "CN=localhost"
+        }
+    },
+    {
+        "num": "gnutls1154",
+        "issue": {
+            "serial": "02",
+            "issuer": "C=UN,ST=NYS,O=UNGA,OU=UNSC,CN=DT",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "bc93a7c14d51a1b11e5dc9c191eadb5b53d5bc58"
+            }
+        }
+    },
+    {
+        "num": "gnutls1156",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "www.b.com/c.ext",
+                "DNS": "www.example.com",
+                "email": "g@h.com"
+            }
+        }
+    },
+    {
+        "num": "gnutls1158",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "ldap://http:/un.org",
+                "DNS": "test.local",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "gnutls1165",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "https://www.a.com/b.ext",
+                "DNS": "test.local",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "gnutls1167",
+        "issue": {
+            "issuer": "CN=DT,OU=UNSC,O=UNGA,ST=NYS,C=UN"
+        }
+    },
+    {
+        "num": "gnutls1168",
+        "issue": {
+            "issuer": "CN=DT,OU=UNSC,O=UNGA,ST=NYS,C=UN"
+        }
+    },
+    {
+        "num": "gnutls1170",
+        "issue": {
+            "issuer": "CN=DT,OU=UNSC,O=UNGA,ST=NYS,C=UN"
+        }
+    },
+    {
+        "num": "gnutls1171",
+        "issue": {
+            "issuer": "CN=DT,OU=UNSC,O=UNGA,ST=NYS,C=UN"
+        }
+    },
+    {
+        "num": "gnutls1202",
+        "issue": {
+            "serial": "0x1091dc2c81285a6ac43099d9807911f2",
+            "issuer": "CN=smtp.yandex.ru,O=Yandex LLC,OU=ITO,L=Moscow,C=RU"
+        }
+    },
+    {
+        "num": "gnutls1223",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "test.example.com",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "gnutls1237",
+        "issue": {
+            "serial": "0xdebecc44907bab1df99acd6d1568fbb61df2e6"
+        }
+    },
+    {
+        "num": "gnutls1243",
+        "issue": {
+            "issuer": "O=test, OU=test, C=CN, ST=test"
+        }
+    },
+    {
+        "num": "gnutls1255",
+        "issue": {
+            "serial": "0x0410fb0070d12440dfb74d2b867ac95584006b7d",
+            "issuer": "CN=test, OU=test, O=test"
+        }
+    },
+    {
+        "num": "gnutls1285",
+        "issue": {
+            "serial": "0x035246f14a5f17856da061c4af902569e957",
+            "issuer": "CN=R3,O=Let's Encrypt,C=US"
+        }
+    },
+    {
+        "num": "gnutls1332",
+        "issue": {
+            "serial": "0x330017f392df3169646870385900000017f392",
+            "issuer": "CN=Microsoft Azure TLS Issuing CA 05,O=Microsoft Corporation,C=US"
+        }
+    },
+    {
+        "num": "gnutls1335",
+        "issue": {
+            "serial": "0x04568ce008fea2f0063e06ef52b45111a3ec",
+            "issuer": "CN=R3,O=Let's Encrypt,C=US"
+        }
+    },
+    {
+        "num": "gnutls1348",
+        "issue": {
+            "serial": "0x07468da604438a91d14e3e9e33d871b9",
+            "issuer": "CN=*.tstpaypoint.services,O=Paypoint Network LTD,L=Welwyn Garden City,C=GB"
+        }
+    },
+    {
+        "num": "gnutls1357",
+        "issue": {
+            "serial": "0x04b4095290dbfcdf9ea4b9fceb4626e379f7",
+            "issuer": "CN=R3,O=Let's Encrypt,C=US"
+        }
+    },
+    {
+        "num": "gnutls1392",
+        "issue": {
+            "serial": "ALcX+trIX5yn",
+            "issuer": "CN=localhost",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "E3:76:B4:62:05:2B:2F:D4:B9:12:5B:B0:EA:E0:4F:10:C8:C0:C5:B0"
+            }
+        }
+    },
+    {
+        "num": "gnutls1412",
+        "issue": {
+            "serial": "RAO5XT7tkYlNt77CBj2H5HiEw",
+            "issuer": "CN=mkcert jmalves@pop-os (Joao Alves), OU=mkcert development CA, O=mkcert development CA, L=jmalves@pop-os (Joao Alves)"
+        }
+    },
+    {
+        "num": "gnutls1455",
+        "issue": {
+            "serial": "0x04675191b85af1eea91388782cc5a2e1258c",
+            "issuer": "CN=R3,O=Let's Encrypt,C=US"
+        }
+    },
+    {
+        "num": "gnutls1477",
+        "issue": {
+            "serial": "0x4001772137d4e942b8ee76aa3c640ab7",
+            "issuer": "CN=DST Root CA X3,O=Digital Signature Trust Co."
+        }
+    },
+    {
+        "num": "gnutls1515",
+        "issue": {
+            "serial": "1",
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "test.local",
+                "email": "testcert@example.org"
+            },
+            "issuer": "CN=Issuer"
+        }
+    },
+    {
+        "num": "gnutls1525",
+        "issue": {
+            "serial": "9d9b1ac3-6af5-47f2-9cdb-2201652648a0",
+            "issuer": "O=bettertls.com,CN=D,serialNumber=9d9b1ac3-6af5-47f2-9cdb-2201652648a0"
+        }
+    },
+    {
+        "num": "gnutls1550",
+        "issue": {
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "The KeyIdentifier or Subject Key Identifier value that appears in the report. If the report does not contain a KeyIdentifier or Subject Key Identifier value, fill in the default value 123456 here, or return \"\" to indicate a null value mentioned in the report."
+            }
+        }
+    },
+    {
+        "num": "gnutls1600",
+        "issue": {
+            "serial": "202410",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "56c7328e3f7cc921a85ac83d1d1e79ec727b665b"
+            },
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "*.example.net",
+                "email": "admin@test.local"
+            },
+            "issuer": "C = US,ST = State,L = City,O = Org,OU = Operations,CN = mail_server_2"
+        }
+    },
+    {
+        "num": "gnutls1612",
+        "issue": {
+            "create authorityKeyIdentifier": [
+                {
+                    "KeyIdentifier": "8C:AE:A9:CD:18:10:47:48:33:5D:C6:AC:2B:6A:29:BB:5F:B4:7D:29"
+                },
+                {
+                    "KeyIdentifier": "8C:AE:A9:CD:18:10:47:48:33:5D:C6:AC:2B:6A:29:BB:5F:B4:7D:29"
+                }
+            ]
+        }
+    },
+    {
+        "num": "gnutls1613",
+        "issue": {
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": ""
+            }
+        }
+    },
+    {
+        "num": "gnutls1621",
+        "issue": {
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": ""
+            }
+        }
+    },
+    {
+        "num": "gnutls1631",
+        "issue": {
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "0"
+            }
+        }
+    },
+    {
+        "num": "gnutls1638",
+        "issue": {
+            "thisUpdae": "0103010100Z"
+        }
+    },
+    {
+        "num": "gnutls1639",
+        "issue": {
+            "serial": "1"
+        }
+    },
+    {
+        "num": "gnutls1641",
+        "issue": {
+            "thisUpdae": "0103010100Z"
+        }
+    },
+    {
+        "num": "gnutls1642",
+        "issue": {
+            "issuer": "CN=www.mycompany.com,OU=My Unit1,O=My Company1,L=MY Locality1,ST=My ST1,C=UN"
+        }
+    },
+    {
+        "num": "gnutls1643",
+        "issue": {
+            "issuer": "CN=www.mycompany.com,OU=My Unit1,O=My Company1,L=MY Locality1,ST=My ST1,C=UN"
+        }
+    },
+    {
+        "num": "gnutls1656",
+        "issue": {
+            "thisUpdae": "241130235959Z",
+            "issuer": "CN=Entrust Root Certification Authority - G2, O=Entrust, Inc., L=US, C=US"
+        }
+    },
+    {
+        "num": "gnutls1669",
+        "issue": {
+            "issuer": "CN=www.mycompany.com,OU=My Unit1,O=My Company1,L=MY Locality1,ST=My ST1,C=UN"
+        }
+    },
+    {
+        "num": "gnutls1671",
+        "issue": {
+            "issuer": "CN=www.mycompany.com,OU=My Unit1,O=My Company1,L=MY Locality1,ST=My ST1,C=UN"
+        }
+    },
+    {
+        "num": "gnutls1672",
+        "issue": {
+            "issuer": "CN=www.mycompany.com,OU=My Unit1,O=My Company1,L=MY Locality1,ST=My ST1,C=UN"
+        }
+    },
+    {
+        "num": "gnutls1673",
+        "issue": {
+            "issuer": "CN=www.mycompany.com,OU=My Unit1,O=My Company1,L=MY Locality1,ST=My ST1,C=UN"
+        }
+    },
+    {
+        "num": "gnutls1674",
+        "issue": {
+            "issuer": "C=USA"
+        }
+    },
+    {
+        "num": "gnutls1675",
+        "issue": {
+            "thisUpdae": "2017090721Z"
+        }
+    },
+    {
+        "num": "gnutls1676",
+        "issue": {
+            "issuer": "OU=test, CN=test, O=test, L=test, ST=test, C=#0c025553"
+        }
+    },
+    {
+        "num": "gnutls1677",
+        "issue": {
+            "issuer": "CN=test, O=VeriSign\\\\, L=test, ST=test, C=US"
+        }
+    },
+    {
+        "num": "go73030",
+        "issue": {
+            "serial": "134026152402537916809419830168838464",
+            "issuer": "CN=US,OU=US,O=US,L=US,ST=US,C=US"
+        }
+    },
+    {
+        "num": "go73028",
+        "issue": {
+            "issuer": "CN=test,OU=Class 3 Public Primary Certification Authority,O=VeriSign\\\\,L=test,ST=test,C=US",
+            "serial": "1"
+        }
+    },
+    {
+        "num": "go72076",
+        "issue": {
+            "serial": "Cert174065870010.pem"
+        }
+    },
+    {
+        "num": "go71832",
+        "issue": {
+            "issuer": "CN=test, OU=test, O=test, L=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "go71089",
+        "issue": {
+            "thisUpdae": "2025-01-01"
+        }
+    },
+    {
+        "num": "go71077",
+        "issue": {
+            "thisUpdae": "2025-01-01T00:00:00Z"
+        }
+    },
+    {
+        "num": "go70619",
+        "issue": {
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": ""
+            }
+        }
+    },
+    {
+        "num": "go70324",
+        "issue": {
+            "issuer": "CN=test, OU=test, O=test, L=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "go70242",
+        "issue": {
+            "serial": "21:60:51:40:c8:89:7f:46:be:ea:e6:24:40:a8:c8:1a",
+            "issuer": "C=FR, OU=SSLGROUPE, 0002 493455042, O=BPCE, CN=www.ebics.bpce.fr"
+        }
+    },
+    {
+        "num": "go70039",
+        "issue": {
+            "create authorityKeyIdentifier": [
+                {
+                    "KeyIdentifier": "123456"
+                },
+                {
+                    "KeyIdentifier": "123456"
+                }
+            ]
+        }
+    },
+    {
+        "num": "go69930",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "https://1kYj\\[@.cfZGv3T_Tr.D?/zrm3/4WA/Ir}BQ/yR]/0[g?<tX=uR?&K'O={d2}&sG?rLi=<}e>",
+                "DNS": "test.local",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "go69078",
+        "issue": {
+            "thisUpdae": "2010-07-07T15:01:05Z",
+            "nextUpdate": "2010-07-07T18:35:17Z",
+            "serial": "17f77deb3bcbb235d44ccc7dba62e72"
+        }
+    },
+    {
+        "num": "go67571",
+        "issue": {
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "99c826668f2d01b54a27ae658284092f2dab97fc"
+            }
+        }
+    },
+    {
+        "num": "go67024",
+        "issue": {
+            "serial": "0"
+        }
+    },
+    {
+        "num": "go65990",
+        "issue": {
+            "serial": "7c:6d:cd:78:18:4a:91:c6:05:9b:b7:24:55:38:d5:36"
+        }
+    },
+    {
+        "num": "go65829",
+        "issue": {
+            "serial": "41 43 40 b3 2b 9b 26 49 53 f4 cc 9b 8c a2 29 ed",
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "localhost",
+                "email": "admin@test.local"
+            },
+            "issuer": "CN=3Shape Dental Desktop Root CA, OU=3Shape A/S, O=Denmark, L=Copenhagen, C=DK"
+        }
+    },
+    {
+        "num": "go63164",
+        "issue": {
+            "serial": "The certificate serial number value appearing in the report goes here",
+            "issuer": "CN=localhost, OU=Internet Widgits Pty Ltd, O=Internet Widgits Pty Ltd, L=Some-State, ST=Some-State, C=AU"
+        }
+    },
+    {
+        "num": "go63148",
+        "issue": {
+            "issuer": "CN=...,OU=...,O=...,L=...,ST=...,C=...,emailAddress=support@team"
+        }
+    },
+    {
+        "num": "go62060",
+        "issue": {
+            "issuer": "CN=test, OU=test, O=test, L=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "go61963",
+        "issue": {
+            "issuer": "CN=TUBITAK Kamu SM SSL Kok Sertifikasi - Surum 1"
+        }
+    },
+    {
+        "num": "go60719",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "localhost",
+                "email": "admin@test.local"
+            },
+            "issuer": "CN=localhost"
+        }
+    },
+    {
+        "num": "go60653",
+        "issue": {
+            "thisUpdae": "2013-07-26T11:03:57Z"
+        }
+    },
+    {
+        "num": "go57461",
+        "issue": {
+            "thisUpdae": "Dec 26 03:03:57 2022 GMT",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "DA:E0:15:3C:4B:5D:BB:04:3E:D7:AE:75:DF:39:5A:D1:F6:B6:9A:CD"
+            },
+            "serial": "01",
+            "issuer": "CN = TestRootCA-0"
+        }
+    },
+    {
+        "num": "go57395",
+        "issue": {
+            "issuer": "CN=chunkbox,OU=first+OU=a002+OU=third+OU=b004,O=example,L=Somewhere,ST=Confusion,C=XX"
+        }
+    },
+    {
+        "num": "go56779",
+        "issue": {
+            "issuer": "CN=golang"
+        }
+    },
+    {
+        "num": "go53944",
+        "issue": {
+            "issuer": "CN=test, OU=test, O=test, L=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "go53943",
+        "issue": {
+            "issuer": "CN=test, OU=test, O=test, L=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "go53923",
+        "issue": {
+            "thisUpdae": "Jul 17 08:21:09 2022 GMT",
+            "serial": "97",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "4C:10:E5:BC:4A:F2:D7:1A:E8:F9:40:02:DA:D0:B9:55:24:38:50:90"
+            },
+            "issuer": "/C=/ST=/L=/O=/OU=/CN=3rd time after cleaning up"
+        }
+    },
+    {
+        "num": "go53754",
+        "issue": {
+            "issuer": "C=US, ST=California, L=San Francisco, O=Internet Widgets, Inc., OU=WWW, CN=Root"
+        }
+    },
+    {
+        "num": "go53310",
+        "issue": {
+            "issuer": "CN=test, OU=test, O=test, L=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "go52742",
+        "issue": {
+            "serial": "1",
+            "issuer": "O = VGoemFIEcw",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "77:BA:A5:E0:98:3C:12:50:43:4D:20:8A:74:46:6A:D8"
+            }
+        }
+    },
+    {
+        "num": "go52462",
+        "issue": {
+            "issuer": "CN=foo, O=bar, C=FI"
+        }
+    },
+    {
+        "num": "go52282",
+        "issue": {
+            "issuer": "CN=gerritbot.golang.org"
+        }
+    },
+    {
+        "num": "go51369",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "g\\x81\\x05\\x05\\x01\\x01",
+                "DNS": "test.local",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "go49678",
+        "issue": {
+            "serial": "4d:00:04:9b:44:6f:c6:43:9c:d8:f5:3a:00:00:03:00:04:9b:44",
+            "issuer": "DC = pl, DC = com, DC = <edited>, CN = <edited>    Subordinate CA",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "04:7B:E7:F9:21:DB:92:0E:21:DE:70:B2:CD:FC:16:49:0D:11:46:92"
+            }
+        }
+    },
+    {
+        "num": "go48314",
+        "issue": {
+            "issuer": "CN=localhost",
+            "serial": "11063694427729383276"
+        }
+    },
+    {
+        "num": "go43954",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "oftp://O0013000001VW      KOI",
+                "DNS": "test.local",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "go43868",
+        "issue": {
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "bc93a7c14d51a1b11e5dc9c191eadb5b53d5bc58"
+            }
+        }
+    },
+    {
+        "num": "go42395",
+        "issue": {
+            "issuer": "DC=loc; DC=A2; CN=LGTSubCA23"
+        }
+    },
+    {
+        "num": "go40679",
+        "issue": {
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": ""
+            }
+        }
+    },
+    {
+        "num": "go40604",
+        "issue": {
+            "issuer": "GB/COMODO CA Limited//COMODO RSA Extended Validation Secure Server CA"
+        }
+    },
+    {
+        "num": "go40545",
+        "issue": {
+            "serial": "VkElzevM5tqOIoJxMSJnzPvc1M"
+        }
+    },
+    {
+        "num": "go40188",
+        "issue": {
+            "serial": "3678"
+        }
+    },
+    {
+        "num": "go39568",
+        "issue": {
+            "issuer": "C = US, ST = Washington, L = Seattle, O = \"Amazon Web Services, Inc.\", OU = Amazon RDS, CN = Amazon RDS us-west-2 2019 CA"
+        }
+    },
+    {
+        "num": "go39012",
+        "issue": {
+            "serial": "1",
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "localhost",
+                "email": "admin@test.local"
+            },
+            "issuer": "CN=localhost"
+        }
+    },
+    {
+        "num": "go36945",
+        "issue": {
+            "thisUpdae": "#25010102000000Z",
+            "serial": "01",
+            "issuer": "CN=testing"
+        }
+    },
+    {
+        "num": "go35706",
+        "issue": {
+            "issuer": "CN=GlobalSign, OU=GlobalSign Root CA - R2, O=GlobalSign, L=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "go34729",
+        "issue": {
+            "issuer": "O=example.com, CN=*.example.com"
+        }
+    },
+    {
+        "num": "go33967",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "sum.golang.google.cn",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "go33310",
+        "issue": {
+            "serial": "The certificate serial number value appearing in the report goes here"
+        }
+    },
+    {
+        "num": "go33259",
+        "issue": {
+            "issuer": "CN=Huawei KeyStore   , OU=  , O=  , L=  , ST=  , C=  "
+        }
+    },
+    {
+        "num": "go33192",
+        "issue": {
+            "thisUpdae": "081112021752Z",
+            "issuer": "CN=SJEI WebAdmin CA1, emailAddress=support@pacetechnical.com, O=SJEI, L=Innisfil, ST=ca, C=ca",
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "gww.jjei.com",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "go31773",
+        "issue": {
+            "serial": "0a:e4:90:72:1c:85:e6:10:78:9a:2c:68:4f:0f:6c:b9",
+            "issuer": "C=US, O=DigiCert Inc, CN=DigiCert SHA2 Secure Server CA"
+        }
+    },
+    {
+        "num": "go31383",
+        "issue": {
+            "issuer": "CN=test, OU=test, O=test, L=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "go29497",
+        "issue": {
+            "issuer": "CN=wifi.vanke.com,OU=IT Center,O=China Vanke,L=Shen Zhen,ST=Guang Dong,C=CN"
+        }
+    },
+    {
+        "num": "go29040",
+        "issue": {
+            "issuer": "CN=Example User,OU=Lower+OU=Upper,O=My Org,C=GB"
+        }
+    },
+    {
+        "num": "go28971",
+        "issue": {
+            "serial": "1658",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "1, 2, 3, 4, 6"
+            },
+            "issuer": "CN=Root"
+        }
+    },
+    {
+        "num": "go28276",
+        "issue": {
+            "serial": "00"
+        }
+    },
+    {
+        "num": "go26093",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "bestflar.com",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "go24293",
+        "issue": {
+            "issuer": "CN=our.company.registry"
+        }
+    },
+    {
+        "num": "go24254",
+        "issue": {
+            "issuer": "CN=user, OU=foobar1, OU=foo"
+        }
+    },
+    {
+        "num": "go24070",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "master.test.local.",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "go23995",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "SnakeOil Intermediate CA 2",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "go23711",
+        "issue": {
+            "serial": "aFacnWI+18PkzWw3L1ZhDyWE6/U",
+            "issuer": "CN=Fabio Test CA"
+        }
+    },
+    {
+        "num": "go23499",
+        "issue": {
+            "issuer": "/C=US/ST=Washington/L=Redmond/O=Microsoft Corporation/CN=Microsoft Root Certificate Authority 2010"
+        }
+    },
+    {
+        "num": "go23403",
+        "issue": {
+            "serial": "BBDF40C3D41C117922CF2A54B3CDF2EBB78444CD4B48419E014780D1E1806031",
+            "create Issuer Alternative Name": {
+                "URI": "https://www.catcert.net/verCIC-2",
+                "DNS": "test.local",
+                "email": "admin@test.local"
+            },
+            "issuer": "CN=EC-ACC, OU=Agencia Catalana de Certificacio (NIF Q-0801176-I), O=Serveis Publics de Certificacio, L=Vegeu https://www.catcert.net/verCIC-2 (c), ST=Jerarquia Entitats de Certificacio Catalanes, C=ES"
+        }
+    },
+    {
+        "num": "go23016",
+        "issue": {
+            "serial": "04316693ED",
+            "issuer": "CN=Name constraint1, OU=Everything, O=Mother Nature, ST=US, C=US",
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "www.dns.com",
+                "email": "good_email@gg.com"
+            }
+        }
+    },
+    {
+        "num": "go22970",
+        "issue": {
+            "serial": "Dn3kbM04dGYpYMWEN9lNFz",
+            "issuer": "CN=DigiCert Global Root G2, OU=www.digicert.com, O=DigiCert Inc, L=test, ST=test, C=US"
+        }
+    },
+    {
+        "num": "go21593",
+        "issue": {
+            "serial": "1",
+            "issuer": "CN=acme-dev, OU=Security, O=Acme, L=Mountain View, ST=California, C=US"
+        }
+    },
+    {
+        "num": "go21301",
+        "issue": {
+            "issuer": "C=NL,ST=Noord-Holland,L=Amsterdam,O=TERENA,CN=TERENA SSL CA 2"
+        }
+    },
+    {
+        "num": "go21118",
+        "issue": {
+            "serial": "14533"
+        }
+    },
+    {
+        "num": "go19561",
+        "issue": {
+            "serial": "IIE31FZVaPXTUw",
+            "create Issuer Alternative Name": {
+                "URI": "http://pki.google.com/GIAG2.crt",
+                "DNS": "mail.google.com",
+                "email": "admin@test.local"
+            },
+            "issuer": "CN=Google Internet Authority G2, O=Google Inc, C=US"
+        }
+    },
+    {
+        "num": "go18654",
+        "issue": {
+            "issuer": "CN=test, OU=test, O=test, L=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "go16603",
+        "issue": {
+            "serial": "SerialNumber"
+        }
+    },
+    {
+        "num": "go16442",
+        "issue": {
+            "thisUpdae": "150405201409Z",
+            "serial": "DerFGz933ozj",
+            "issuer": "CN=go"
+        }
+    },
+    {
+        "num": "go16347",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "example.com",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "go15693",
+        "issue": {
+            "serial": "446D1605CBC32049",
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "*.appspot.com",
+                "email": "admin@test.local"
+            },
+            "issuer": "CN=Google Internet Authority G2, O=Google Inc, C=US"
+        }
+    },
+    {
+        "num": "go15407",
+        "issue": {
+            "thisUpdae": "203008210000Z"
+        }
+    },
+    {
+        "num": "go15256",
+        "issue": {
+            "issuer": "CN=test/abc=1234"
+        }
+    },
+    {
+        "num": "go14955",
+        "issue": {
+            "issuer": "CN=test, OU=test, O=test, L=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "go14501",
+        "issue": {
+            "issuer": "CN=Self Signers, O=Self Signers",
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "localhost",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "go13931",
+        "issue": {
+            "thisUpdae": "Nov 10 23:00:00 2009 GMT",
+            "issuer": "CN=EXAMPLEROOTCA",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "9B:C9:78:89:2F:90:86:71:98:77:87:19:98:CC:E8:09:A9:48:95:12"
+            },
+            "serial": "01"
+        }
+    },
+    {
+        "num": "go12342",
+        "issue": {
+            "serial": "The certificate serial number value appearing in the report goes here"
+        }
+    },
+    {
+        "num": "go11966",
+        "issue": {
+            "issuer": "C=US, ST=State, L=City Name, O=Example Org, OU=Security, CN=server.example.org"
+        }
+    },
+    {
+        "num": "go11091",
+        "issue": {
+            "serial": "OgJHM+7r/xvxxeliFvXjeA",
+            "issuer": "CN=GraingerCA, O=WWGrainger"
+        }
+    },
+    {
+        "num": "go8966",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://ca.dom.tld/",
+                "DNS": "test.local",
+                "email": "some@mail.tld"
+            }
+        }
+    },
+    {
+        "num": "go8265",
+        "issue": {
+            "serial": "negative serial number"
+        }
+    },
+    {
+        "num": "go7516",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "anu.engineer.com",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "go6991",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "icod.de",
+                "email": "info@icod.de"
+            }
+        }
+    },
+    {
+        "num": "go6618",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "www.ehpas.ford.com",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "go5474",
+        "issue": {
+            "email": "admin@test.local",
+            "URI": "http://localhost:8080/crl.der",
+            "DNS": "test.local"
+        }
+    },
+    {
+        "num": "go3930",
+        "issue": {
+            "issuer": "CN=relay.cloudsmtp.com, OU=CapThought, O=Datran, L=Austin, ST=Texas, C=US"
+        }
+    },
+    {
+        "num": "go3791",
+        "issue": {
+            "issuer": "CN=cañonero.simpsons.com"
+        }
+    },
+    {
+        "num": "go2635",
+        "issue": {
+            "serial": "0 (0x0)",
+            "issuer": "O=Acme Co, CN=127.0.0.1",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "01:02:03:04"
+            }
+        }
+    },
+    {
+        "num": "go993",
+        "issue": {
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "48:E6:68:F9:2B:D2:B2:95:D7:47:D8:23:20:10:4F:33:98:90:9F:D4"
+            }
+        }
+    },
+    {
+        "num": "CRY12600",
+        "issue": {
+            "issuer": "C=US,ST=test,L=test,O=VeriSign\\\\,CN=test,OU=Class 3 Public Primary Certification Authority"
+        }
+    },
+    {
+        "num": "CRY12250",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "example.lan",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "CRY12124",
+        "issue": {
+            "serial": "0b:ae:66:bc:5a:ba:7f:95:87:c6:f9:e9:04:e3:33:04",
+            "issuer": "C=US, O=DigiCert, Inc., CN=DigiCert Trusted G4 RSA4096 SHA256 TimeStamping CA"
+        }
+    },
+    {
+        "num": "CRY12078",
+        "issue": {
+            "issuer": "CN=My cool CA"
+        }
+    },
+    {
+        "num": "CRY11833",
+        "issue": {
+            "create authorityKeyIdentifier": [
+                {
+                    "KeyIdentifier": "123456"
+                },
+                {
+                    "KeyIdentifier": "123456"
+                }
+            ]
+        }
+    },
+    {
+        "num": "CRY11784",
+        "issue": {
+            "issuer": "CN=Paolo Bonacina, OU=1, O=1, L=, ST=, C=IT",
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "Paolo Bonacina",
+                "email": "paolo.bonacina@fastwebnet.it"
+            }
+        }
+    },
+    {
+        "num": "CRY11723",
+        "issue": {
+            "issuer": "CN=www.intel.com, OU=OnDie CA Root Cert Signing, O=Intel Corporation, L=Santa Clara, ST=CA, C=US"
+        }
+    },
+    {
+        "num": "CRY11365",
+        "issue": {
+            "serial": "2191154333115965757",
+            "issuer": "CN=UCA Global G2 Root, OU=UniTrust, O=UniTrust, C=CN"
+        }
+    },
+    {
+        "num": "CRY11175",
+        "issue": {
+            "issuer": "O=talos",
+            "serial": "16780191428389035461"
+        }
+    },
+    {
+        "num": "CRY11037",
+        "issue": {
+            "serial": "0",
+            "issuer": "CN=SEV-Milan"
+        }
+    },
+    {
+        "num": "CRY10962",
+        "issue": {
+            "issuer": "CN=ICAM Test Card Root CA, OU=ICAM Test Cards, O=U.S. Government, L=, ST=, C=US"
+        }
+    },
+    {
+        "num": "CRY10727",
+        "issue": {
+            "serial": "44:af:b0:80:d6:a3:27:ba:89:30:39:86:2e:f8:40:6b",
+            "issuer": "O=Digital Signature Trust Co., CN=DST Root CA X3"
+        }
+    },
+    {
+        "num": "CRY10685",
+        "issue": {
+            "thisUpdae": "99991231225959.357Z"
+        }
+    },
+    {
+        "num": "CRY10663",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "cryptography.io",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "CRY10553",
+        "issue": {
+            "serial": "int(binascii.hexlify(os.urandom(16)).decode('utf8'), 16)",
+            "issuer": "c_x509.Name([ c_x509.NameAttribute(c_x509.NameOID.COMMON_NAME, cname), ])"
+        }
+    },
+    {
+        "num": "CRY10422",
+        "issue": {
+            "serial": "1000",
+            "issuer": "CN=COMMON_NAME"
+        }
+    },
+    {
+        "num": "CRY10367",
+        "issue": {
+            "serial": "MzAwMDE="
+        }
+    },
+    {
+        "num": "CRY10247",
+        "issue": {
+            "serial": "6609"
+        }
+    },
+    {
+        "num": "CRY10133",
+        "issue": {
+            "issuer": "CN=Ex Vitö, emailAddress=ex.vitorino@gmail.com, O=Great Org"
+        }
+    },
+    {
+        "num": "CRY10065",
+        "issue": {
+            "serial": "43:1c:28:c6:74:0f:ed:25:57:44:9f:f2:fd:0e:5e:14",
+            "issuer": "C=CO, O=Sociedad Cameral de Certificación Digital - Certicámara S.A., CN=AC Raíz Certicámara S.A."
+        }
+    },
+    {
+        "num": "CRY9879",
+        "issue": {
+            "issuer": "CN=acme, OU=IT, O=acme, L=Houston, ST=Texas, C=US"
+        }
+    },
+    {
+        "num": "CRY9820",
+        "issue": {
+            "thisUpdae": "Nov  2 17:31:51 2023 GMT",
+            "serial": "7B",
+            "issuer": "CN = Factory-CA, OU = {{ factory }}",
+            "nextUpdate": "Nov  2 17:41:51 2023 GMT"
+        }
+    },
+    {
+        "num": "CRY9349",
+        "issue": {
+            "issuer": "C = US, ST = CA, L = San Diego, OU = Test, O = Tester, CN = Testname"
+        }
+    },
+    {
+        "num": "CRY9253",
+        "issue": {
+            "serial": "EK3rzQ",
+            "issuer": "CN=example",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "2bzCtCCA1f4l/9+S+kzPnCD0q1U"
+            }
+        }
+    },
+    {
+        "num": "CRY9033",
+        "issue": {
+            "serial": "TuVnENAO+5syJCWo+ujxisn4Lvow",
+            "issuer": "CN=CommonNameOrHostname, OU=CompanyNameSectionName, O=CompanyName1, L=CityName1, ST=StateName1, C=XX",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "4X7ndpRUGgZ5WiPViQQb7fMmk4c"
+            }
+        }
+    },
+    {
+        "num": "CRY8996",
+        "issue": {
+            "thisUpdae": "Jun  7 06:34:08 2022 GMT",
+            "serial": "912047151",
+            "issuer": "CN=, OU=, O=, L=, ST=, C="
+        }
+    },
+    {
+        "num": "CRY8930",
+        "issue": {
+            "thisUpdae": "230515181039Z",
+            "issuer": "CN=Example CA, O=Company"
+        }
+    },
+    {
+        "num": "CRY8752",
+        "issue": {
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "9B1EE0D411C92CD71E1283D37143FFD1BEF83E5F"
+            },
+            "create Issuer Alternative Name": {
+                "URI": "http://certs.eid.belgium.be/belgiumrs4.crt",
+                "DNS": "test.local",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "CRY8488",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://ca.mtin.es/mtin/crl.der",
+                "DNS": "test.local",
+                "email": "admin_ca@mtin.es"
+            }
+        }
+    },
+    {
+        "num": "CRY8414",
+        "issue": {
+            "serial": "b4:e6:ba:3b:e4:b6:74:a3:64:34",
+            "issuer": "C=US, OU=emSign PKI, O=eMudhra Inc, CN=emSign Root CA - C2"
+        }
+    },
+    {
+        "num": "CRY8147",
+        "issue": {
+            "issuer": "CN=localhost, C=US"
+        }
+    },
+    {
+        "num": "CRY7818",
+        "issue": {
+            "serial": "SvAXOvXZih6hXMjQQNhJtqaCZkU",
+            "issuer": "CN=Test, OU=Test, O=Salt, L=US, ST=Test, C=US"
+        }
+    },
+    {
+        "num": "CRY7513",
+        "issue": {
+            "issuer": "CN=Test Name, L=Test City, OU=Test OU 2, OU=TEST OU 1, O=Test Organization, C=BR"
+        }
+    },
+    {
+        "num": "CRY7331",
+        "issue": {
+            "serial": "arIN27uqpOjJb0ylPcVFY4Et6Ccw",
+            "issuer": "CN=RSA-SSA-PSS CA, OU=ID PKI, O=rsa ssa pss, L=rsa ssa pss"
+        }
+    },
+    {
+        "num": "CRY7189",
+        "issue": {
+            "serial": "4581057599893149371",
+            "issuer": "CN = Nuvoton TPM Root CA 2110 + O = Nuvoton Technology Corporation + C = TW"
+        }
+    },
+    {
+        "num": "CRY7127",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "test.local",
+                "email": "santa@north.pole"
+            }
+        }
+    },
+    {
+        "num": "CRY7065",
+        "issue": {
+            "serial": "1",
+            "issuer": "CN=CA, O=MaybeBug, L=Zurich, ST=Zurich, C=CH"
+        }
+    },
+    {
+        "num": "CRY6805",
+        "issue": {
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": ""
+            }
+        }
+    },
+    {
+        "num": "CRY6804",
+        "issue": {
+            "issuer": "CN=Internal-CA, C=FR, ST=Auvergne-Rh\\xF4ne-Alpes, L=Saint-Marcellin, O=Giordana Home"
+        }
+    },
+    {
+        "num": "CRY6702",
+        "issue": {
+            "serial": "07~R\\x93{\\xe0\\x15\\xe3W\\xf0i\\x8c\\xcb\\xec\\x0c",
+            "issuer": "CN=AC Ra\\xc3\\xadz Certic\\xc3\\xa1mara S.A., OU=Sociedad Cameral de Certificaci\\xc3\\xb3n Digital - Certic\\xc3\\xa1mara S.A., O=CO, L=CO, ST=CO, C=CO",
+            "thisUpdae": "061127204629Z"
+        }
+    },
+    {
+        "num": "CRY6609",
+        "issue": {
+            "serial": "7is969Qh3hSoYqwE893EAT",
+            "issuer": "CN=EC-ACC, OU=Serveis Publics de Certificacio, O=Agencia Catalana de Certificacio (NIF Q-0801176-I), L=Jerarquia Entitats de Certificacio Catalanes, ST=Vegeu https://www.catcert.net/verarrel (c)03"
+        }
+    },
+    {
+        "num": "CRY6601",
+        "issue": {
+            "issuer": "C = DE, CN = foobar"
+        }
+    },
+    {
+        "num": "CRY6475",
+        "issue": {
+            "serial": "IIXsO3pkN/pOAwDQYJKoZIhvcNAQEFBQAwQjESMBAGA1UE",
+            "issuer": "CN = ACCVRAIZ1, OU = PKIACCV, O = ACCV, C = ES",
+            "create Issuer Alternative Name": {
+                "URI": "http://www.accv.es/fileadmin/Archivos/certificados/raizaccv1.crt",
+                "DNS": "test.local",
+                "email": "accv@accv.es"
+            }
+        }
+    },
+    {
+        "num": "CRY6368",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "replica1.ipa.test",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "CRY6363",
+        "issue": {
+            "serial": "1",
+            "issuer": "CN=example.com"
+        }
+    },
+    {
+        "num": "CRY6171",
+        "issue": {
+            "issuer": "CN=test, OU=test, O=test, L=test, ST=test, C=CN",
+            "thisUpdae": "140118210250Z"
+        }
+    },
+    {
+        "num": "CRY5556",
+        "issue": {
+            "serial": "cert_to_revoke.serial_number",
+            "issuer": "ca_crt.issuer"
+        }
+    },
+    {
+        "num": "CRY5467",
+        "issue": {
+            "serial": "1000",
+            "issuer": "CN=My CA, ST=CA, L=San Francisco, O=Commandment, C=RU",
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "my.ca",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "CRY5447",
+        "issue": {
+            "serial": "2b1ca359554a711c"
+        }
+    },
+    {
+        "num": "CRY5245",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "test.local",
+                "email": "pki@sk.ee"
+            },
+            "issuer": "CN=EE Certification Centre Root CA/emailAddress=pki@sk.ee"
+        }
+    },
+    {
+        "num": "CRY5242",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://www.accv.es/fileadmin/Archivos/certificados/raizaccv1.crt",
+                "DNS": "test.local",
+                "email": "admin@test.local"
+            },
+            "issuer": "CN=ACCVRAIZ11, OU=PKIACCV, O=ACCV, L=, ST=, C=ES"
+        }
+    },
+    {
+        "num": "CRY5119",
+        "issue": {
+            "issuer": "CN=elephant,O=serengeti,C=TZ"
+        }
+    },
+    {
+        "num": "CRY4949",
+        "issue": {
+            "thisUpdae": "#250102000000Z",
+            "serial": "0"
+        }
+    },
+    {
+        "num": "CRY4858",
+        "issue": {
+            "serial": "CD6695561D9B76C2334619E5922A32E944D95288",
+            "issuer": "CN=rootca, O=bootstrap",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "a49800ba57eca2f307346052f06052ca7bfa0cfd"
+            }
+        }
+    },
+    {
+        "num": "CRY4833",
+        "issue": {
+            "serial": "Ax8khDB8m8URsxI8sjakgNRRMA0GCSqGSIb3DQEBCwUA",
+            "issuer": "CN=Let's Encrypt Authority X3, O=Let's Encrypt, C=US",
+            "create Issuer Alternative Name": {
+                "URI": "http://ocsp.int-x3.letsencrypt.org/",
+                "DNS": "test.local",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "CRY4830",
+        "issue": {
+            "serial": "the serialnumber should be a negitive number"
+        }
+    },
+    {
+        "num": "CRY4810",
+        "issue": {
+            "issuer": "C=CO,O=Sociedad Cameral de Certificación Digital - ....."
+        }
+    },
+    {
+        "num": "CRY4487",
+        "issue": {
+            "serial": "QUjS7meQqGE0",
+            "issuer": "CN=cstest.auth0.com"
+        }
+    },
+    {
+        "num": "CRY4186",
+        "issue": {
+            "serial": "AMCjVO7bK6nV",
+            "issuer": "CN=Nuvoton TPM Root CA 1013, OU=Nuvoton Technology Corporation, O=TW, L=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "CRY4175",
+        "issue": {
+            "issuer": "CN=test, OU=test, O=test, L=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "CRY4158",
+        "issue": {
+            "serial": "fad29d33d7d57092",
+            "issuer": "C = NL, ST = Some-State, L = Almere, O = MBIct, OU = development, CN = MBIct, emailAddress = info@mbict.nl",
+            "thisUpdae": "Jun 20 19:41:13 2015 GMT"
+        }
+    },
+    {
+        "num": "CRY4154",
+        "issue": {
+            "serial": "AT",
+            "issuer": "CN=SnakeOil, OU=dummy, O=dummy, L=dummy, ST=dummy, C=FI",
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "test.local",
+                "email": "dummy@test.local"
+            }
+        }
+    },
+    {
+        "num": "CRY3986",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "localhost",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "CRY3943",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "2001:db8::17",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "CRY3863",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://[::1]:80/some/path",
+                "DNS": "test.local",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "CRY3857",
+        "issue": {
+            "issuer": "CN=siavash, OU=siavash, O=siavash, L=siavash, ST=siavash, C=siavash"
+        }
+    },
+    {
+        "num": "CRY3986",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "localhost",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "CRY3943",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "2001:db8::17",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "CRY3863",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://[::1]:80/some/path",
+                "DNS": "test.local",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "CRY3857",
+        "issue": {
+            "issuer": "CN=siavash, OU=siavash, O=siavash, L=siavash, ST=siavash, C=siavash"
+        }
+    },
+    {
+        "num": "CRY3086",
+        "issue": {
+            "thisUpdae": "Aug 12 21:36:16 2016 GMT",
+            "issuer": "/CN=walkman",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "4A:BD:9A:6A:41:4E:98:AD:C7:4D:82:52:4C:7E:72:4C:FE:2E:39:90"
+            },
+            "serial": "22A4769F632AB01EB5AD1DC16B282033EBC5CA2B"
+        }
+    },
+    {
+        "num": "CRY3064",
+        "issue": {
+            "serial": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+        }
+    },
+    {
+        "num": "CRY2758",
+        "issue": {
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "The SKI"
+            }
+        }
+    },
+    {
+        "num": "CRY2665",
+        "issue": {
+            "serial": "3",
+            "issuer": "CN=InvalidCC"
+        }
+    },
+    {
+        "num": "CRY2640",
+        "issue": {
+            "serial": "0"
+        }
+    },
+    {
+        "num": "CRY2404",
+        "issue": {
+            "issuer": "CN=www.yassl.com, OU=Consulting, O=Sawtootha, L=Bozeman, ST=Montana, C=US"
+        }
+    },
+    {
+        "num": "CRY2288",
+        "issue": {
+            "serial": "52323",
+            "issuer": "CN=test, OU=test, O=test, L=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "BC2022",
+        "issue": {
+            "issuer": "CN=test, O=VeriSign\\\\, L=test, ST=test, C=US"
+        }
+    },
+    {
+        "num": "BC2011",
+        "issue": {
+            "issuer": "C=USA"
+        }
+    },
+    {
+        "num": "BC2010",
+        "issue": {
+            "issuer": ""
+        }
+    },
+    {
+        "num": "BC1986",
+        "issue": {
+            "thisUpdae": "0103010100Z"
+        }
+    },
+    {
+        "num": "BC1973",
+        "issue": {
+            "thisUpdae": "0103010100Z"
+        }
+    },
+    {
+        "num": "BC1940",
+        "issue": {
+            "issuer": "CN=test, OU=test, O=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "BC1683",
+        "issue": {
+            "issuer": "CN=Issuer"
+        }
+    },
+    {
+        "num": "BC1556",
+        "issue": {
+            "issuer": "C = DE, L = Berlin, O = Wohnungsbaugenossenschaft \"Humboldt-Universit\\C3\\A4t\" eG, CN = transfer.wbg-hub.de"
+        }
+    },
+    {
+        "num": "BC1516",
+        "issue": {
+            "serial": "4269838275860309904",
+            "issuer": "C=US,ST=Arizona,L=Scottsdale,O=GoDaddy.com, Inc.,OU=http://certs.godaddy.com/repository/,CN=Go Daddy Secure Certificate Authority - G2"
+        }
+    },
+    {
+        "num": "BC1514",
+        "issue": {
+            "thisUpdae": "2020-04-25"
+        }
+    },
+    {
+        "num": "BC1501",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "test.local",
+                "email": "test@test.test"
+            }
+        }
+    },
+    {
+        "num": "BC1495",
+        "issue": {
+            "serial": "CECE",
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "ngq.com",
+                "email": "admin@test.local"
+            },
+            "issuer": "CN=aa, OU=aaa, O=aaaa, L=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "BC1490",
+        "issue": {
+            "serial": "AvQ6MV0MwmSo",
+            "issuer": "CN=GMcert RSA Root CA - 01, O=GMCert.org, L=HaiDian, ST=Beijing, C=CN",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "BaWeTXMU2T3cXHSiqzWzjTxqY+b"
+            }
+        }
+    },
+    {
+        "num": "BC1420",
+        "issue": {
+            "issuer": "CN=ca"
+        }
+    },
+    {
+        "num": "BC1365",
+        "issue": {
+            "issuer": "CN=GGeierlein DEV, OU=GGeierlein, O=Stefan Siegel, L=Ansbach, ST=Franconia, C=DE"
+        }
+    },
+    {
+        "num": "BC1312",
+        "issue": {
+            "serial": "ANQa1yivHU3c",
+            "issuer": "CN=*.website, OU=test, O=test, L=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "BC1309",
+        "issue": {
+            "issuer": "cn=QuoVadis Root CA 2 G3,o=QuoVadis Limited,c=BM"
+        }
+    },
+    {
+        "num": "BC1301",
+        "issue": {
+            "issuer": "ST=test"
+        }
+    },
+    {
+        "num": "BC1284",
+        "issue": {
+            "issuer": "CN=Subject"
+        }
+    },
+    {
+        "num": "BC1275",
+        "issue": {
+            "serial": "40a635f68367d01b183aa1cc492f21a2",
+            "issuer": "CN=VeriSign Class 3 Secure Server CA - G3, OU=VeriSign Trust Network, O=VeriSign, Inc., L=Terms of use at https://www.verisign.com/rpa (c)10, ST=US, C=US",
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "baidu.com",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "BC1202",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "login.microsoftonline.us",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "BC1193",
+        "issue": {
+            "issuer": "CN=Legion of the Bouncy Castle Inc., OU=Java Software Code Signing, O=Oracle Corporation"
+        }
+    },
+    {
+        "num": "BC1175",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "example.org",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "BC1134",
+        "issue": {
+            "serial": "AjAN",
+            "issuer": "CN=abna-csca-switzerland-20, OU=Certification Authorities, O=Admin, L=Services, ST=CH, C=CH"
+        }
+    },
+    {
+        "num": "BC1103",
+        "issue": {
+            "issuer": "cn=Max,...,c=IT"
+        }
+    },
+    {
+        "num": "BC1034",
+        "issue": {
+            "serial": "AgEC",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": ""
+            },
+            "issuer": "CN=Simple Root CA, OU=Simple Root CA, O=Simple Inc, L=org, ST=simple, C=CN"
+        }
+    },
+    {
+        "num": "BC977",
+        "issue": {
+            "serial": "3C:9E:B1:89:F7:33:D3",
+            "issuer": "CN=JCE Code Signing CA,OU=Java Software Code Signing, O=Oracle Corporation"
+        }
+    },
+    {
+        "num": "BC800",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://crl3.digicert.com/ssca-sha2-g6.crl",
+                "DNS": "cluster5.eu.messagelabs.com",
+                "email": "admin@test.local"
+            },
+            "issuer": "CN=DigiCert SHA2 Secure Server CA, O=DigiCert Inc, C=US"
+        }
+    },
+    {
+        "num": "BC799",
+        "issue": {
+            "serial": "0A7871741F9CD8043A689CAEE637A14B",
+            "issuer": "CN=TeleSec PKS eIDAS QES CA 11, OU=Deutsches Telekom AG, O=Deutsches Telekom AG, L=UST-IdNr. DE 123475223, C=DE",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "FFF489EA75ACC5D3D22434F9652A06F2CCE9BA81"
+            },
+            "create Issuer Alternative Name": {
+                "URI": "http://pks.telesec.de/cps",
+                "DNS": "test.local",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "BC760",
+        "issue": {
+            "serial": "32"
+        }
+    },
+    {
+        "num": "BC758",
+        "issue": {
+            "serial": "AU3ninOCS2ONavh0497qEj",
+            "issuer": "CN=CipherMail licensing root certificate, L=Amsterdam, ST=NH, O=CipherMail licensing root certificate, C=NL"
+        }
+    },
+    {
+        "num": "BC732",
+        "issue": {
+            "serial": "4103",
+            "issuer": "CN=Dr. Mueller, OU=BN14091973, OU=MuellerKasse, O=ITSG TrustCenter fuer Arbeitgeber, C=DE"
+        }
+    },
+    {
+        "num": "BC719",
+        "issue": {
+            "issuer": "CN=test, OU=test, O=test, L=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "BC712",
+        "issue": {
+            "issuer": "CN=Legion of the Bouncy Castle Inc., OU=Java Software Code Signing, O=Sun Microsystems Inc"
+        }
+    },
+    {
+        "num": "BC709",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "mydns.fr",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "BC693",
+        "issue": {
+            "issuer": "CN=bla,serialNumber=1234"
+        }
+    },
+    {
+        "num": "BC639",
+        "issue": {
+            "serial": "48 00 00 00 1D 6E E9 AA 02 4F 86 12 1C 00 00 00 00 00 1D",
+            "issuer": "CN=ad-bpg-AD-BPG-CA, DC=ad-bpg, DC=eng, DC=abc, DC=com",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "D6 F1 27 48 76 AD FB 04 03 1E 84 A6 86 F5 CB 61 85 D9 6D 29"
+            },
+            "create Issuer Alternative Name": {
+                "URI": "ldap:///CN=ad-bpg-AD-BPG-CA,CN=AIA,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=ad-bpg,DC=eng,DC=abc,DC=com?cACertificate?base?objectClass=certificationAuthority",
+                "DNS": "test.local",
+                "email": "vlsuser-1@ad-bpg.eng.abc.com"
+            }
+        }
+    },
+    {
+        "num": "BC614",
+        "issue": {
+            "issuer": "CN=exampleCA, OU=Example Org, O=Example Company, L=San Francisco, ST=California, C=US"
+        }
+    },
+    {
+        "num": "BC605",
+        "issue": {
+            "issuer": "CN=foo"
+        }
+    },
+    {
+        "num": "BC584",
+        "issue": {
+            "serial": "37:1f:99:d0:37:cd:c1:9a:b2:96:82:d1:fd:85:46:03:14:50:76:3c",
+            "issuer": "CN = my.ca.local",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "AB:46:5A:A6:73:C2:CC:C8:7E:00:76:B7:55:3F:1B:76:1E:7F:E5:FF"
+            }
+        }
+    },
+    {
+        "num": "BC527",
+        "issue": {
+            "serial": "Q9RLKbSh3PJLtsVmOHzZZD",
+            "issuer": "CN=C Certum QCA 2017, OU=Asseco Data Systems S.A., O=PL"
+        }
+    },
+    {
+        "num": "BC518",
+        "issue": {
+            "serial": "1176098190 (0x4619d58e)",
+            "issuer": "C = US, ST = Louisiana, L = NSK, O = \"Swsoft, Inc\", OU = 123, CN = ssltest.bcom, emailAddress = olga@localhosd.net"
+        }
+    },
+    {
+        "num": "BC516",
+        "issue": {
+            "issuer": "OU=keller@GmxCh, CN=Hanspeter Keller"
+        }
+    },
+    {
+        "num": "BC497",
+        "issue": {
+            "issuer": "CN=Valid DN nameConstraints EE Certificate Test1, ou=permittedSubtree1, o=Test\nCertificates 2011, c=US"
+        }
+    },
+    {
+        "num": "BC430",
+        "issue": {
+            "serial": "cert.getSerialNumber()",
+            "issuer": "cert.getIssuerDN().getName()"
+        }
+    },
+    {
+        "num": "BC354",
+        "issue": {
+            "serial": "32"
+        }
+    },
+    {
+        "num": "BC270",
+        "issue": {
+            "serial": "IBETA"
+        }
+    },
+    {
+        "num": "BC244",
+        "issue": {
+            "serial": "certHolder.getSerialNumber()"
+        }
+    },
+    {
+        "num": "BC224",
+        "issue": {
+            "thisUpdae": "2017090721Z"
+        }
+    },
+    {
+        "num": "BC204",
+        "issue": {
+            "serial": "00aa5e07c6314e02a9",
+            "issuer": "CN=AU, ST=Some-State, L=Some-State, O=Internet Widgits Pty Ltd"
+        }
+    },
+    {
+        "num": "BC189",
+        "issue": {
+            "serial": "IIIBQGIgAAAAMw",
+            "issuer": "CN=JSCA_ROOT_SM20, OU=msZ/oi4/nnIHnlLXlrZDllYbliqHmnI3liqHkuK3lv4PmnInpmZDotKPku7vlhazlj7g, O=msZ/oi4/nnIHnlLXlrZDllYbliqHmnI3liqH5pyN5Yqh5Lit5b+D5pyJ6ZmQ6LSj5Lu75YWs5Y+4, L=lNl+S6rOW4g, ST=msZ/oi4/nnI, C=CN"
+        }
+    },
+    {
+        "num": "wolfssl8529",
+        "issue": {
+            "issuer": ""
+        }
+    },
+    {
+        "num": "wolfssl8525",
+        "issue": {
+            "serial": " longer than 20 octets"
+        }
+    },
+    {
+        "num": "wolfssl8334",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "test.local",
+                "email": "olivier.demengeon@wanadoo.fr"
+            }
+        }
+    },
+    {
+        "num": "wolfssl8137",
+        "issue": {
+            "issuer": "C=US; O=Certainly; CN=Certainly Intermediate R1"
+        }
+    },
+    {
+        "num": "wolfssl7756",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "www.youtube.com",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "wolfssl7414",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "test.local",
+                "email": "colmenero.sendra@gmail.com"
+            }
+        }
+    },
+    {
+        "num": "wolfssl7276",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "test.local",
+                "email": "small_town_123@163.com"
+            }
+        }
+    },
+    {
+        "num": "wolfssl7275",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "test.local",
+                "email": "small_town_123@163.com"
+            }
+        }
+    },
+    {
+        "num": "wolfssl6205",
+        "issue": {
+            "issuer": "C = NZ, L = Hamilton, O = \"Blue Leaf Software, Ltd\", CN = Lumos, serialNumber = BLS-001"
+        }
+    },
+    {
+        "num": "wolfssl6063",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "one.one.one.one",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "wolfssl6014",
+        "issue": {
+            "serial": "a0:d0:20:30:90:b0:00:00:00:15",
+            "issuer": "C=CN, ST=\\xE5\\x8C\\x97\\xE4\\xBA\\xAC, L=bj, O=Home, CN=Wifi \\xE6\\x88\\x91\\xE5\\xAE\\xB6 Root CA"
+        }
+    },
+    {
+        "num": "wolfssl5880",
+        "issue": {
+            "issuer": "CN=localhost",
+            "serial": "YDgleyiLJSKbSWzlU3PTCB/PPYI"
+        }
+    },
+    {
+        "num": "wolfssl5843",
+        "issue": {
+            "serial": "GAYSt5oWZ",
+            "issuer": "CN=Appgate SDP CA, OU=test, O=test, L=test, ST=test, C=CN"
+        }
+    },
+    {
+        "num": "wolfssl5659",
+        "issue": {
+            "serial": "03 5e e3 f5 53 68 c7 e3 c6 97 6a c1 1d f9 e7 01"
+        }
+    },
+    {
+        "num": "wolfssl4879",
+        "issue": {
+            "serial": "03:4e:29:5a:d6:74:ae:fd:51:cd:0d:61:11:f9:e3:e3:bd:88",
+            "issuer": "/C=US/O=Let's Encrypt/CN=R3",
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "lencr.org",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "wolfssl4443",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "lencr.org",
+                "email": "admin@test.local"
+            },
+            "issuer": "C = US, O = Internet Security Research Group, CN = ISRG Root X1"
+        }
+    },
+    {
+        "num": "wolfssl4410",
+        "issue": {
+            "serial": "Got Cert Header"
+        }
+    },
+    {
+        "num": "wolfssl4397",
+        "issue": {
+            "serial": "YFOB9QABAACIv",
+            "issuer": "CN=Google Internet Authority, O=Google Inc, L=Mountain View, ST=California, C=US"
+        }
+    },
+    {
+        "num": "wolfssl3638",
+        "issue": {
+            "issuer": "CN=estExampleCA",
+            "serial": "20838"
+        }
+    },
+    {
+        "num": "wolfssl3556",
+        "issue": {
+            "serial": "22:b9:b1:72:fa:93:1a:5b:74",
+            "issuer": "C = JP, O = \"SECOM Trust Systems CO.,LTD.\", OU = Security Communication RootCA2",
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "0A:85:A9:77:65:05:98:7C:40:81:F8:0F:97:2C:38:F1:0A:EC:3C:CF"
+            }
+        }
+    },
+    {
+        "num": "wolfssl3006",
+        "issue": {
+            "thisUpdae": "50480528121111Z"
+        }
+    },
+    {
+        "num": "wolfssl2758",
+        "issue": {
+            "create Issuer Alternative Name": {
+                "URI": "http://localhost:8080/crl.der",
+                "DNS": "www.wolfssl.com",
+                "email": "admin@test.local"
+            }
+        }
+    },
+    {
+        "num": "wolfssl2680",
+        "issue": {
+            "issuer": "C = CN, ST = TJ5, O = TJU, OU = beiyangyuan, CN = b326, emailAddress = li1@163.com"
+        }
+    },
+    {
+        "num": "wolfssl2659",
+        "issue": {
+            "create authorityKeyIdentifier": {
+                "KeyIdentifier": "92:3E:8A:51:4A:96:6D:6F:F0:1D:0A:F5:0F:0A:EE:FF:66:68:77:F0"
+            }
+        }
+    },
+    {
+        "num": "wolfssl2657",
+        "issue": {
+            "thisUpdae": "#0101010I00Z"
+        }
+    },
+    {
+        "num": "wolfssl2220",
+        "issue": {
+            "serial": "2473892731"
+        }
+    },
+    {
+        "num": "wolfssl1295",
+        "issue": {
+            "thisUpdae": "20550313091000Z"
+        }
+    },
+    {
+        "num": "wolfssl1132",
+        "issue": {
+            "issuer": "C=US; O=DigiCert Inc; CN=DigiCert Global CA G3"
+        }
+    },
+    {
+        "num": "wolfssl510",
+        "issue": {
+            "serial": "0xe8 0xd4 0xa5 0x10 0x63"
+        }
+    },
+    {
+        "num": "wolfssl360",
+        "issue": {
+            "serial": "1227750",
+            "issuer": "C=US, O=Equifax, OU=Equifax Secure Certificate Authority"
+        }
+    }
+]

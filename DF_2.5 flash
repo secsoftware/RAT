@@ -1,0 +1,303 @@
+When executing this task, please proceed with the utmost rigor. It is imperative that the returned values neither omit any information present in the parsing results, nor differ in any way from the values as they originally appear in the parsing results. You must meticulously review your output to ensure it is absolutely free of errors.
+
+When extracting information, strictly adhere to the principle that the JSON values must exactly reflect what is present in the parsing results. (This is after you have removed any content I subsequently instruct you to omit.).
+
+You are an expert well-versed in RFC5280. You are to carefully follow the instructions I provide below:
+
+I need you to extract information from CRL parsing results and return it in JSON format.
+
+Please pay close attention:The values of the CRL_Number, Authority_Cert_Serial_Number, and Delta_CRL_Indicator fields should be returned from the parsing result.Be extremely careful when handling these field values to avoid any errors.
+
+Please note that since the values of the Issuer field and the Authority_Cert_Issuer field are similar, be careful not to confuse their values when returning their values.
+
+Please pay close attention:For the Authority_Cert_Issuer field, do not return an empty value if DirName, Authority_Cert_Issuer, or directoryName is not empty in the parsing result; otherwise, do not return an empty value. For the Issuer field, do not return an empty value if the Issuer field value in the parsing result is not empty; otherwise, do not return an empty value.
+
+For the Authority_Cert_Issuer key, it must only return information that appears in DirName, Authority_Cert_Issuer, or directoryName; do not use information from the Issuer field.
+
+For the Issuer key, it must only return information from the Issuer field; do not use information from the DirName, Authority_Cert_Issuer, or directoryName fields.
+
+For DirName, if a situation like C=USO=123, ST=Root CA occurs in the DirName, do not split it into C=US, O=123, ST=Root CA. Instead, directly pass the entire value C=USO=123, ST=Root CA (i.e., the original DirName string) as the value for the "Authority_Cert_Issuer" key in the JSON output.
+
+Below is an example of the JSON format:
+{
+  "Tls_tool":"Enter the TLS name to be resolved here.Such as:openssl cryptography gnutls wolfssl go";
+  "thisUpdate": "Return the thisUpdate information using the YYYY-MM-DD HH:MM:SS format, ensuring the actual time value represented is the same as in the parsing result you are given.",
+  "nextUpdate": "Return the nextUpdate information using the YYYY-MM-DD HH:MM:SS format, ensuring the actual time value represented is the same as in the parsing result you are given.",
+  "Issuer": "Return the Issuer value from the Issuer field in the parsing results here.",
+  "CRL_Number": "Return the CRL number value from the parsing results here.",
+  "Key_Identifier": "Return the Key_Identifier value from the AKI extension in the CRL file here. Please use a format like 48:DB:CD:DE:8E:E9:49:72:5A:88:E8:B1:D8:3D:07:B3:B9:6B:66:50 to return the Key_Identifier value, ensuring all alphabetic characters in the Key_Identifier value are uppercase.Make sure to remove the colon (:) from the Key_Identifier value.",
+  "Authority_Cert_Issuer": "Return the Authority_Cert_Issuer value from the AKI extension in the parsing results here.",
+  "Authority_Cert_Serial_Number": "Return the value of the Authority_Cert_Serial_Number field from the parsing results here.",
+  "Delta_CRL_Indicator": "Return the value of the Delta_CRL_Indicator extension here, with the same requirements as the CRL_Number field.",
+  "Issuer_Alternative_Name": "Return the value of the Issuer_Alternative_Name extension here. It requires returning values in the order and form of DNS, URI, Email. If the parsing result you are given is already in DNS, URI, Email form, then directly return the value from the result, for example, in a format like DNS:test.local, URI:http://localhost:8080, Email:admin@test.local. Ensure all \\ characters are removed upon return.",
+  "Revoked_Cert_Serial": "Return the Revoked_Cert_Serial value from the parsing results here. If there are multiple revoked certificates, return all certificate serial numbers separated by commas (e.g., serial1,serial2).Return the Revoked_Cert_Serial value without converting it from hexadecimal to decimal.",
+  "Revoked_Cert_Reason_Code": "Return the reason for revocation of revoked certificates here. Please map the revocation reason from the parsing result to one of the following: unspecified, keyCompromise, cACompromise, affiliationChanged, superseded, cessationOfOperation, certificateHold, removeFromCRL, privilegeWithdrawn, aACompromise. The purpose is to standardize revocation reasons across different parsing results. If there are multiple revocation reasons, return them in the format reason1,reason2.",
+  "Revoked_Cert_Invalidity_Date": "Return the Revoked_Cert_Invalidity_Date information using the YYYY-MM-DD HH:MM:SS format, ensuring the actual time value represented is the same as in the parsing result you are given."
+}
+
+For the Issuer field, the following requirements apply:
+Note: In this paragraph, \\ denotes a single backslash character.
+
+1.only field name that may represent the Issuer field value is Issuer:. Please return the value of the Issuer field from the parsing result to the value of the "Issuer" key in the JSON.
+
+2.However, note that the content to be returned for Issuer must not contain any \\ characters.
+
+For the Authority_Cert_Issuer and DirName field, the following requirements apply:
+Note: In this paragraph, \\ denotes a single backslash character.
+
+1.Field names that may represent the Authority_Cert_Issuer field value include directoryName, DirName, and Authority_Cert_Issuer. If any of these three field names exist in the parsing result, please return the value of that field from the parsing result to the value of the "Authority_Cert_Issuer" key in the JSON. If none of the aforementioned three field names exist in the parsing result, then the value of the "Authority_Cert_Issuer" key should be "False".
+
+2.Note, the value returned for the "Authority_Cert_Issuer" key must not contain any backslash (\\) characters.
+
+3.If the Authority_Cert_Issuer or DirName field exists in the parsing result, assign its field value (Note:Do not omit or add content.) as the value for the "Authority_Cert_Issuer" key.
+
+For the Authority_Cert_Serial_Number field, the following requirements apply:
+
+If the parsing result contains either the 'Authority_Cert_Serial_Number' field or the 'serial' field, please directly return the field value of 'Authority_Cert_Serial_Number' or 'serial' from the parsing result as the value for the 'Authority_Cert_Serial_Number' key (there is no need to change the field value of 'Authority_Cert_Serial_Number' or 'serial' in the parsing result)(Keep in mind: regarding GnuTLS's 'serial' field, its true value is solely the data that follows the 'serial' identifier on the same line.).
+
+Please note:
+
+Each returned key-value pair must be enclosed in double quotes, not single quotes.
+
+Different parsing results may display the same field names in different forms; analyze carefully.
+
+For field values that do not exist in the parsing result, set the value of the non-existent field to the string 'False'.
+
+If a field value in the parsing result you are given is already 'False', use 'False' as its value directly.
+
+Please note that you should only return the JSON, and each field value, apart from the specific value or the string 'False', should not contain any other content.
+
+Below is an example, using OpenSSL parsing results:
+Certificate Revocation List (CRL):
+        Version 2 (0x1)
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=US, ST=California, L=San Francisco, O=My Company, CN=My Root CA, OU=My Root CA
+        Last Update: Sep  1 00:00:00 2024 GMT
+        Next Update: Dec  1 00:00:00 2025 GMT
+        CRL extensions:
+            X509v3 CRL Number:
+                1
+            X509v3 Issuing Distribution Point:
+                Full Name:
+                  URI:http://localhost:8000/ca_crl.der
+
+            X509v3 Authority Key Identifier:
+                keyid:30:82:01:22:30:0D:06:09:2A:86:48:86:F7:0D:01:01:01:05:00:03:82:01:0F:00:30:82:01:0A:02:82:01:01:00:DE:A3:8F:09:26:57:EA:6C:7B:8D:F4:31:07:F2:69:6B:FE:26:D0:1D:DA:BE:8A:AB:31:2A:B8:17:28:A1:FC:EE:7F:FC:AF:74:48:50:3E:32:B7:6D:CA:2D:81:F1:1C:16:AD:D0:32:8D:4C:27:BB:EA:44:71:08:BB:48:49:FB:96:67:11:0B:48:45:CA:E0:56:6E:FF:12:85:42:06:90:DC:F4:10:ED:5B:8D:13:0E:9E:BD:CF:D9:1A:2B:2C:8A:63:2E:AB:C6:64:8A:80:9C:9D:18:17:86:18:CC:01:C6:04:CA:FE:8D:31:02:B8:82:0B:79:4B:5C:74:FC:1B:C6:0C:6A:62:94:A5:3A:0F:2F:98:82:45:7F:86:24:F9:E7:8B:30:76:38:3B:E9:40:63:16:91:BA:7D:FB:5C:44:73:87:43:EC:36:F6:C1:F5:1B:81:AB:43:61:4A:06:9D:D4:0A:58:3E:3D:52:15:11:6A:F4:19:78:BA:43:C6:5C:FD:DD:8B:AD:45:19:19:4D:67:38:20:1E:D6:79:B8:84:6F:7F:41:0E:34:8F:DD:06:26:DA:1F:AB:65:8C:A3:A7:71:B1:CB:CA:41:35:33:F3:13:D0:E4:E3:28:E2:A9:2E:E8:DD:61:AF:8B:F4:BA:CC:A4:CB:0E:F5:A5:F6:DE:A9:30:E3:02:03:01:00:01
+                DirName:C=USST=California, L=San FranciscoO=My Company, CN=My Root CAemailAddress=info@example.com
+                serial:19:37:32:35:AB:7D:85:33:A8:F2:79:C6:77:31:7B:31:3C:CB:F5:60
+            X509v3 Issuer Alternative Name:
+                DNS:http://issuer.example.com
+            X509v3 Delta CRL Indicator: critical
+                2
+            X509v3 Freshest CRL:
+                Full Name:
+                  URI:http://localhost:8000/ca_crl.der
+
+            Authority Information Access:
+                OCSP - URI:http://ocsp.example.com
+                CA Issuers - URI:http://example.com/ca.crt
+Revoked Certificates:
+    Serial Number: 1C80022EF81F2405EE96A612DCB61FE0AC701E5E
+        Revocation Date: Apr  2 01:30:07 2025 GMT
+        CRL entry extensions:
+            X509v3 CRL Reason Code:
+                AA Compromise
+    Signature Algorithm: sha256WithRSAEncryption
+    Signature Value:
+        42:0c:48:aa:74:29:58:3e:37:67:dd:cc:7a:a1:9b:55:66:5f:
+        9e:a5:6b:01:37:41:85:89:71:65:31:2c:72:5a:c2:14:83:65:
+        82:d9:b6:5b:7c:8a:51:c6:04:d1:ba:e9:73:4e:76:17:a8:9b:
+        fc:a4:46:ab:92:c7:a0:52:27:78:0a:6e:c5:bf:f8:24:5c:69:
+        5f:ce:b9:d8:ef:e2:16:c1:7f:58:e0:24:19:4e:5f:29:06:00:
+        fc:bc:3e:e6:34:13:22:91:0f:fe:e6:f3:5a:b0:40:16:55:e3:
+        dc:b8:2a:89:61:1b:7a:18:f9:c0:68:e8:93:4d:5a:87:74:6c:
+        6f:86:0c:f5:02:98:d8:f9:ea:bd:e6:2e:f1:ec:c9:01:80:1e:
+        42:4b:b8:53:2a:8f:40:3f:5f:34:7e:b8:0d:22:e9:cb:a8:2e:
+        4b:40:97:19:d3:53:9c:b1:6e:52:9c:3d:23:18:08:2a:6d:b9:
+        1b:10:f8:9e:42:7a:8d:bc:0a:f4:c0:3c:fa:9d:5e:88:8c:71:
+        52:b6:d1:e3:ee:cb:5d:ad:9a:60:63:22:d7:ee:2c:19:ee:07:
+        28:7a:a2:b5:5c:6d:d1:51:19:f6:64:c6:6c:9f:96:f0:91:1f:
+        fa:a5:70:5f:0e:61:a0:35:54:6a:a7:21:7a:93:bc:c3:44:bd:
+        cd:cf:fb:a0
+
+The returned JSON should be:
+{
+"Tls_tool":"openssl",
+"thisUpdate": "2024-09-01 00:00:00",
+"nextUpdate": "2025-12-01 00:00:00",
+"Issuer": "C=US, ST=California, L=San Francisco, O=My Company, CN=My Root CA, OU=My Root CA",
+"CRL_Number": "1",
+"Key_Identifier": "30:82:01:22:30:0D:06:09:2A:86:48:86:F7:0D:01:01:01:05:00:03:82:01:0F:00:30:82:01:0A:02:82:01:01:00:DE:A3:8F:09:26:57:EA:6C:7B:8D:F4:31:07:F2:69:6B:FE:26:D0:1D:DA:BE:8A:AB:31:2A:B8:17:28:A1:FC:EE:7F:FC:AF:74:48:50:3E:32:B7:6D:CA:2D:81:F1:1C:16:AD:D0:32:8D:4C:27:BB:EA:44:71:08:BB:48:49:FB:96:67:11:0B:48:45:CA:E0:56:6E:FF:12:85:42:06:90:DC:F4:10:ED:5B:8D:13:0E:9E:BD:CF:D9:1A:2B:2C:8A:63:2E:AB:C6:64:8A:80:9C:9D:18:17:86:18:CC:01:C6:04:CA:FE:8D:31:02:B8:82:0B:79:4B:5C:74:FC:1B:C6:0C:6A:62:94:A5:3A:0F:2F:98:82:45:7F:86:24:F9:E7:8B:30:76:38:3B:E9:40:63:16:91:BA:7D:FB:5C:44:73:87:43:EC:36:F6:C1:F5:1B:81:AB:43:61:4A:06:9D:D4:0A:58:3E:3D:52:15:11:6A:F4:19:78:BA:43:C6:5C:FD:DD:8B:AD:45:19:19:4D:67:38:20:1E:D6:79:B8:84:6F:7F:41:0E:34:8F:DD:06:26:DA:1F:AB:65:8C:A3:A7:71:B1:CB:CA:41:35:33:F3:13:D0:E4:E3:28:E2:A9:2E:E8:DD:61:AF:8B:F4:BA:CC:A4:CB:0E:F5:A5:F6:DE:A9:30:E3:02:03:01:00:01",
+"Authority_Cert_Issuer": "C=USST=California, L=San FranciscoO=My Company, CN=My Root CAemailAddress=info@example.com",
+"Authority_Cert_Serial_Number": "19:37:32:35:AB:7D:85:33:A8:F2:79:C6:77:31:7B:31:3C:CB:F5:60",
+"Delta_CRL_Indicator": "2",
+"Issuer_Alternative_Name": "URI:http://issuer.example.com",
+"Revoked_Cert_Serial": "1C80022EF81F2405EE96A612DCB61FE0AC701E5E",
+"Revoked_Cert_Reason_Code": "aACompromise",
+"Revoked_Cert_Invalidity_Date": "False"
+}
+
+Below is an example, using GnuTLS parsing results:
+
+X.509 Certificate Revocation List Information:
+	Version: 2
+	Issuer: OU=My Root CA,CN=My Root CA,O=My Company,L=San Francisco,ST=California,C=US
+	Update dates:
+		Issued: Sun Sep 01 00:00:00 UTC 2024
+		Next at: Mon Dec 01 00:00:00 UTC 2025
+	Extensions:
+		CRL Number (not critical): 01
+		Unknown extension 2.5.29.28 (not critical):
+			ASCII: 0&.$.". http://localhost:8000/ca_crl.der
+			Hexdump: 3026a024a0228620687474703a2f2f6c6f63616c686f73743a383030302f63615f63726c2e646572
+		Authority Key Identifier (not critical):
+			directoryName: OU=My Root CA,CN=My Root CA,O=My Company,L=San Francisco,ST=California,C=EN
+			serial: 19373235ab7d8533a8f279c677317b313ccbf560
+			30820122300d06092a864886f70d01010105000382010f003082010a0282010100dea38f092657ea6c7b8df43107f2696bfe26d01ddabe8aab312ab81728a1fcee7ffcaf7448503e32b76dca2d81f11c16add0328d4c27bbea447108bb4849fb9667110b4845cae0566eff1285420690dcf410ed5b8d130e9ebdcfd91a2b2c8a632eabc6648a809c9d18178618cc01c604cafe8d3102b8820b794b5c74fc1bc60c6a6294a53a0f2f9882457f8624f9e78b3076383be940631691ba7dfb5c44738743ec36f6c1f51b81ab43614a069dd40a583e3d5215116af41978ba43c65cfddd8bad4519194d6738201ed679b8846f7f410e348fdd0626da1fab658ca3a771b1cbca413533f313d0e4e328e2a92ee8dd61af8bf4bacca4cb0ef5a5f6dea930e30203010001
+		Unknown extension 2.5.29.18 (not critical):
+			ASCII: 0...http://issuer.example.com
+			Hexdump: 301b8219687474703a2f2f6973737565722e6578616d706c652e636f6d
+		Unknown extension 2.5.29.27 (critical):
+			ASCII: ...
+			Hexdump: 020102
+		Unknown extension 2.5.29.46 (not critical):
+			ASCII: 0(0&.$.". http://localhost:8000/ca_crl.der
+			Hexdump: 30283026a024a0228620687474703a2f2f6c6f63616c686f73743a383030302f63615f63726c2e646572
+		Unknown extension 1.3.6.1.5.5.7.1.1 (not critical):
+			ASCII: 0L0#..+.....0...http://ocsp.example.com0%..+.....0...http://example.com/ca.crt
+			Hexdump: 304c302306082b060105050730018617687474703a2f2f6f6373702e6578616d706c652e636f6d302506082b060105050730028619687474703a2f2f6578616d706c652e636f6d2f63612e637274
+	Revoked certificates (1):
+		Serial Number (hex): 1c80022ef81f2405ee96a612dcb61fe0ac701e5e
+		Revoked at: Wed Apr 02 01:30:07 UTC 2025
+	Signature Algorithm: RSA-SHA256
+	Signature:
+		42:0c:48:aa:74:29:58:3e:37:67:dd:cc:7a:a1:9b:55
+		66:5f:9e:a5:6b:01:37:41:85:89:71:65:31:2c:72:5a
+		c2:14:83:65:82:d9:b6:5b:7c:8a:51:c6:04:d1:ba:e9
+		73:4e:76:17:a8:9b:fc:a4:46:ab:92:c7:a0:52:27:78
+		0a:6e:c5:bf:f8:24:5c:69:5f:ce:b9:d8:ef:e2:16:c1
+		7f:58:e0:24:19:4e:5f:29:06:00:fc:bc:3e:e6:34:13
+		22:91:0f:fe:e6:f3:5a:b0:40:16:55:e3:dc:b8:2a:89
+		61:1b:7a:18:f9:c0:68:e8:93:4d:5a:87:74:6c:6f:86
+		0c:f5:02:98:d8:f9:ea:bd:e6:2e:f1:ec:c9:01:80:1e
+		42:4b:b8:53:2a:8f:40:3f:5f:34:7e:b8:0d:22:e9:cb
+		a8:2e:4b:40:97:19:d3:53:9c:b1:6e:52:9c:3d:23:18
+		08:2a:6d:b9:1b:10:f8:9e:42:7a:8d:bc:0a:f4:c0:3c
+		fa:9d:5e:88:8c:71:52:b6:d1:e3:ee:cb:5d:ad:9a:60
+		63:22:d7:ee:2c:19:ee:07:28:7a:a2:b5:5c:6d:d1:51
+		19:f6:64:c6:6c:9f:96:f0:91:1f:fa:a5:70:5f:0e:61
+		a0:35:54:6a:a7:21:7a:93:bc:c3:44:bd:cd:cf:fb:a0
+
+-----BEGIN X509 CRL-----
+MIIE0zCCA7sCAQEwDQYJKoZIhvcNAQELBQAweTELMAkGA1UEBhMCVVMxEzARBgNV
+BAgMCkNhbGlmb3JuaWExFjAUBgNVBAcMDVNhbiBGcmFuY2lzY28xEzARBgNVBAoM
+Ck15IENvbXBhbnkxEzARBgNVBAMMCk15IFJvb3QgQ0ExEzARBgNVBAsMCk15IFJv
+b3QgQ0EXDTI0MDkwMTAwMDAwMFoXDTI1MTIwMTAwMDAwMFowNTAzAhQcgAIu+B8k
+Be6WphLcth/grHAeXhcNMjUwNDAyMDEzMDA3WjAMMAoGA1UdFQQDCgEKoIIC1TCC
+AtEwCgYDVR0UBAMCAQEwLwYDVR0cBCgwJqAkoCKGIGh0dHA6Ly9sb2NhbGhvc3Q6
+ODAwMC9jYV9jcmwuZGVyMIIBzAYDVR0jBIIBwzCCAb+AggEmMIIBIjANBgkqhkiG
+9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3qOPCSZX6mx7jfQxB/Jpa/4m0B3avoqrMSq4
+Fyih/O5//K90SFA+Mrdtyi2B8RwWrdAyjUwnu+pEcQi7SEn7lmcRC0hFyuBWbv8S
+hUIGkNz0EO1bjRMOnr3P2RorLIpjLqvGZIqAnJ0YF4YYzAHGBMr+jTECuIILeUtc
+dPwbxgxqYpSlOg8vmIJFf4Yk+eeLMHY4O+lAYxaRun37XERzh0PsNvbB9RuBq0Nh
+Sgad1ApYPj1SFRFq9Bl4ukPGXP3di61FGRlNZzggHtZ5uIRvf0EONI/dBibaH6tl
+jKOncbHLykE1M/MT0OTjKOKpLujdYa+L9LrMpMsO9aX23qkw4wIDAQABoX2kezB5
+MQswCQYDVQQGEwJVUzETMBEGA1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2Fu
+IEZyYW5jaXNjbzETMBEGA1UECgwKTXkgQ29tcGFueTETMBEGA1UEAwwKTXkgUm9v
+dCBDQTETMBEGA1UECwwKTXkgUm9vdCBDQYIUGTcyNat9hTOo8nnGdzF7MTzL9WAw
+JAYDVR0SBB0wG4IZaHR0cDovL2lzc3Vlci5leGFtcGxlLmNvbTANBgNVHRsBAf8E
+AwIBAjAxBgNVHS4EKjAoMCagJKAihiBodHRwOi8vbG9jYWxob3N0OjgwMDAvY2Ff
+Y3JsLmRlcjBaBggrBgEFBQcBAQROMEwwIwYIKwYBBQUHMAGGF2h0dHA6Ly9vY3Nw
+LmV4YW1wbGUuY29tMCUGCCsGAQUFBzAChhlodHRwOi8vZXhhbXBsZS5jb20vY2Eu
+Y3J0MA0GCSqGSIb3DQEBCwUAA4IBAQBCDEiqdClYPjdn3cx6oZtVZl+epWsBN0GF
+iXFlMSxyWsIUg2WC2bZbfIpRxgTRuulzTnYXqJv8pEarksegUid4Cm7Fv/gkXGlf
+zrnY7+IWwX9Y4CQZTl8pBgD8vD7mNBMikQ/+5vNasEAWVePcuCqJYRt6GPnAaOiT
+TVqHdGxvhgz1ApjY+eq95i7x7MkBgB5CS7hTKo9AP180frgNIunLqC5LQJcZ01Oc
+sW5SnD0jGAgqbbkbEPieQnqNvAr0wDz6nV6IjHFSttHj7stdrZpgYyLX7iwZ7gco
+eqK1XG3RURn2ZMZsn5bwkR/6pXBfDmGgNVRqpyF6k7zDRL3Nz/ug
+-----END X509 CRL-----
+
+The returned JSON should be:
+
+{
+"Tls_tool":"gnutls",
+"thisUpdate": "2024-09-01 00:00:00",
+"nextUpdate": "2025-12-01 00:00:00",
+"Issuer": "OU=My Root CA,CN=My Root CA,O=My Company,L=San Francisco,ST=California,C=US",
+"CRL_Number": "01",
+"Key_Identifier": "30:82:01:22:30:0D:06:09:2A:86:48:86:F7:0D:01:01:01:05:00:03:82:01:0F:00:30:82:01:0A:02:82:01:01:00:DE:A3:8F:09:26:57:EA:6C:7B:8D:F4:31:07:F2:69:6B:FE:26:D0:1D:DA:BE:8A:AB:31:2A:B8:17:28:A1:FC:EE:7F:FC:AF:74:48:50:3E:32:B7:6D:CA:2D:81:F1:1C:16:AD:D0:32:8D:4C:27:BB:EA:44:71:08:BB:48:49:FB:96:67:11:0B:48:45:CA:E0:56:6E:FF:12:85:42:06:90:DC:F4:10:ED:5B:8D:13:0E:9E:BD:CF:D9:1A:2B:2C:8A:63:2E:AB:C6:64:8A:80:9C:9D:18:17:86:18:CC:01:C6:04:CA:FE:8D:31:02:B8:82:0B:79:4B:5C:74:FC:1B:C6:0C:6A:62:94:A5:3A:0F:2F:98:82:45:7F:86:24:F9:E7:8B:30:76:38:3B:E9:40:63:16:91:BA:7D:FB:5C:44:73:87:43:EC:36:F6:C1:F5:1B:81:AB:43:61:4A:06:9D:D4:0A:58:3E:3D:52:15:11:6A:F4:19:78:BA:43:C6:5C:FD:DD:8B:AD:45:19:19:4D:67:38:20:1E:D6:79:B8:84:6F:7F:41:0E:34:8F:DD:06:26:DA:1F:AB:65:8C:A3:A7:71:B1:CB:CA:41:35:33:F3:13:D0:E4:E3:28:E2:A9:2E:E8:DD:61:AF:8B:F4:BA:CC:A4:CB:0E:F5:A5:F6:DE:A9:30:E3:02:03:01:00:01",
+"Authority_Cert_Issuer": "OU=My Root CA,CN=My Root CA,O=My Company,L=San Francisco,ST=California,C=EN",
+"Authority_Cert_Serial_Number": "19373235ab7d8533a8f279c677317b313ccbf560",
+"Delta_CRL_Indicator": "False",
+"Issuer_Alternative_Name": "False",
+"Revoked_Cert_Serial": "1c80022ef81f2405ee96a612dcb61fe0ac701e5e",
+"Revoked_Cert_Reason_Code": "False",
+"Revoked_Cert_Invalidity_Date": "False"
+}
+
+Below is an example, using wolfssl parsing results:
+
+wolfSSL: Certificate Revocation List (CRL):
+        Version: 2 (0x1)
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer:  C=US, ST=Washington, L=Seattle, O=wolfSSL, OU=Development, CN=wolfSSL Intermediate CA
+        Last Update: Sep 27 12:10:09 2023 GMT
+        Next Update: Jun 23 12:10:09 2026 GMT
+        CRL extensions:
+            X509v3 CRL Number:
+                8192
+            X509v3 Authority Key Identifier:
+                keyid:EF:69:E0:F7:D5:1D:E6:99:EC:DC:6D:D0:F7:E2:B9:5C:64:71:83:35
+Revoked Certificates:
+    Serial Number: 123 (0x7b)
+        Revocation Date: Mar 15 00:00:00 2025 GMT
+    Signature Algorithm: sha256WithRSAEncryption
+         4b:7f:45:20:16:f5:77:18:35:70:b5:d3:fe:d8:3f:1b:90:0e:
+         f7:aa:dc:39:85:b3:df:52:a8:65:e7:b5:01:34:c3:9a:01:bf:
+         59:f9:79:79:9c:b3:a8:8a:e3:eb:23:41:af:48:ad:ab:01:0a:
+         e2:b7:09:47:3e:42:19:13:c2:6b:cd:4c:dd:54:5c:42:77:23:
+         f7:4f:1b:a0:4b:95:b1:a8:96:ce:86:d6:63:3d:53:61:31:54:
+         be:79:50:a5:13:b7:67:5d:b8:fa:60:6e:71:9f:95:c6:20:a5:
+         66:a7:02:7d:1f:f4:23:cb:49:14:c6:03:96:dc:16:b5:aa:7c:
+         55:87:88:57:aa:a1:a8:ac:3b:11:64:cf:87:01:be:99:ed:7c:
+         8f:28:5c:94:f6:aa:ea:c1:e2:50:16:a7:79:c4:0e:0f:3a:e5:
+         5e:c2:c6:80:2e:b8:13:d8:74:cd:b1:5c:ef:14:17:ae:72:d6:
+         46:ea:df:b8:b0:38:bd:8d:b1:a3:2c:a3:c7:04:dc:75:22:c3:
+         2f:8a:e5:a8:0d:9d:54:4c:7f:16:b6:c0:d5:20:63:81:4a:c9:
+         cb:85:c9:b6:1b:05:22:ee:0c:d9:f8:98:f3:57:16:29:09:84:
+         0b:fd:aa:ee:a3:ca:36:b1:86:f1:bd:b8:12:43:ef:15:77:a9:
+         52:d9:5e:25
+-----BEGIN X509 CRL-----
+MIICHDCCAQQCAQEwDQYJKoZIhvcNAQELBQAwgZ8xCzAJBgNVBAYTAlVTMRMwEQYD
+VQQIDApXYXNoaW5ndG9uMRAwDgYDVQQHDAdTZWF0dGxlMRAwDgYDVQQKDAd3b2xm
+U1NMMRQwEgYDVQQLDAtEZXZlbG9wbWVudDEgMB4GA1UEAwwXd29sZlNTTCBJbnRl
+cm1lZGlhdGUgQ0ExHzAdBgkqhkiG9w0BCQEWEGluZm9Ad29sZnNzbC5jb20XDTIz
+MDkyNzEyMTAwOVoXDTI2MDYyMzEyMTAwOVqgMDAuMB8GA1UdIwQYMBaAFO9p4PfV
+HeaZ7Nxt0PfiuVxkcYM1MAsGA1UdFAQEAgIgADANBgkqhkiG9w0BAQsFAAOCAQEA
+S39FIBb1dxg1cLXT/tg/G5AO96rcOYWz31KoZee1ATTDmgG/Wfl5eZyzqIrj6yNB
+r0itqwEK4rcJRz5CGRPCa81M3VRcQncj908boEuVsaiWzobWYz1TYTFUvnlQpRO3
+Z124+mBucZ+VxiClZqcCfR/0I8tJFMYDltwWtap8VYeIV6qhqKw7EWTPhwG+me18
+jyhclPaq6sHiUBanecQODzrlXsLGgC64E9h0zbFc7xQXrnLWRurfuLA4vY2xoyyj
+xwTcdSLDL4rlqA2dVEx/FrbA1SBjgUrJy4XJthsFIu4M2fiY81cWKQmEC/2q7qPK
+NrGG8b24EkPvFXepUtleJQ==
+-----END X509 CRL-----
+
+The returned JSON should be:
+
+{
+  "Tls_tool":"wolfssl",
+  "thisUpdate": "2023-09-27 12:10:09",
+  "nextUpdate": "2026-06-23 12:10:09",
+  "Issuer": "C=US, ST=Washington, L=Seattle, O=wolfSSL, OU=Development, CN=wolfSSL Intermediate CA",
+  "CRL_Number": "8192",
+  "Key_Identifier": "EF:69:E0:F7:D5:1D:E6:99:EC:DC:6D:F0:F7:E2:B9:5C:64:71:83:35",
+  "Authority_Cert_Issuer": "False",
+  "Authority_Cert_Serial_Number": "False",
+  "Delta_CRL_Indicator": "False",
+  "Issuer_Alternative_Name": "False",
+  "Revoked_Cert_Serial": "123",
+  "Revoked_Cert_Reason_Code": "False",
+  "Revoked_Cert_Invalidity_Date": "False"
+}
+
+Below are the parsing results from 5 TLS tools. Please extract each of them into JSON format and return the information(Each returned JSON object is stored in a Python list.):
